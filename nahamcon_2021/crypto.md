@@ -96,14 +96,20 @@ https://www.dcode.fr/book-cipher
 
 ## EAXY
 
-Brute force the text, by uploading the file
-get the output search for `XOR KEY` you get plaintext, thankie to @twh 
-write down the keys like this with indexes and then join them to get the string then convert it to hex, boom!
-
+We are given a hex like looking data, we upload the file to CyberChef,
+From the challenge name we get a hint that it might be XOR, so we try to bruteforce XOR.
+For most of keys you get a plaintext in which they have mentioned the index of the each character
+for example,The word `HELLO` , here the letter `H` will have index 0, and letter `E` will have 1 and so on.
+we write down all the indexes 
+Assemble them accordingly and we get the following string
+`666c61677b31366564666365356331323434336236313832386166366361623930646337397d`
+Which is just a hex string, unhex it and we get the flag 
+`flag{16edfce5c12443b61828af6cab90dc79}`
 ```
-key 30 -32
-key = 31 - 5, 14, 21
-key = 32 - 15, 23, 
+KEY    | INDEX
+key 30 - 32
+key 31 - 5, 14, 21
+key 32 - 15, 23, 
 key 33 - 18, 
 key 34 - 16, 17
 key 35 - 12
@@ -125,6 +131,4 @@ key 30 - 32
 key 31 - 5, 14, 21
 key 32 - 15, 23
 
-666c61677b31366564666365356331323434336236313832386166366361623930646337397d
-convert above string to hex to get the flag = `flag{16edfce5c12443b61828af6cab90dc79}`
 ```
