@@ -42,7 +42,7 @@ Question 1 :
 ```
 
 * answer for 1st question is `-9223372036854775808`
-Explanation
+* Explanation :-
 > The first question given is to find long x such that `x == -x` Here we
 > will need to exploit the use of 2's compliment of binary
 > representation of long. example: in a 4 bit representation of 1, the
@@ -65,7 +65,7 @@ Find 2 different `long` variables `x` and `y`, differing by at most 10, such tha
 ```
 
 * answer for 2nd question is `x = -1 & y = 0`
-Explanation 
+* Explanation :-
 > For the second one the given algorithm for Long.hashCode() is
 > 
 >     public static int hashCode(long value) {    
@@ -128,7 +128,7 @@ boolean isLucky(float magic) {
 ```
 
 * answer for 3rd Question is `2.14E9`
-Explanation
+* Explanation:-
 > The third question is a little tricky We need to find float value
 > magic such that we need to break the loop The other catch is that it
 > have to be less than 7 characters
