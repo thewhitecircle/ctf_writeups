@@ -93,7 +93,7 @@ conn.interactive()
 
 * https://www.reddit.com/r/securityCTF/comments/nbb5z2/buffer_overflow_works_fine_locally_but_not/
 
-* Thanks to Andr3 and hiatus!
+* Thanks to [Andr3](https://github.com/AndreaCarosi-7) and hiatus!
 
 OUTPUT :
 
