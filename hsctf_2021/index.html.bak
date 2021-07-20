@@ -1,0 +1,40 @@
+---
+layout: default
+title: The White Circle | CTF Writeups
+desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+image: images/twc_og_banner.jpg
+---
+
+<div style="display: flex; flex-direction: row;">
+{% assign test = page.dir | split: "/" %}
+{% for ctf in site.data.writeups %}
+{% if ctf.url contains test[4] %}
+{% for category in ctf.files %}
+<button class="" onclick="openW('{{ category }}')">{{ category }}</button>
+{% endfor %}
+</div>
+{% for category in ctf.files %}
+<div id="{{ category }}" class="city">
+{% capture mkd %}
+{% include_relative {{ category }}.md %}
+{% endcapture mkd %}
+{{ mkd | markdownify }}
+</div>
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+  <script>
+    var x = document.getElementsByClassName("city");
+    for (i = 1; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+    function openW(cityName) {
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(cityName).style.display = "block";
+    }
+  </script>
