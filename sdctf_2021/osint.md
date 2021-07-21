@@ -43,6 +43,7 @@ sdctf{W0w_1_h4D_n0_ID3a!}
 > Solved By : Ava and nigamelastic
 
 * I've gotten some more good intel. Apparently, the following information is the location of another flag!
+
 ```
 First piece of info : gg/4KcDWnUYMs
 
