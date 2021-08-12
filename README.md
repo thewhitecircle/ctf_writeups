@@ -1,5 +1,6 @@
 # CTF WriteUps by TWC
 
+* [UIUCTF 2021](uiuctf_2021/README.md)
 * [HSCTF 2021](hsctf_2021/README.md)
 * [M0leCon 2021](m0lecon_2021/README.md)
 * [SDCTF 2021](sdctf_2021/README.md)
