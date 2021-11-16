@@ -5,19 +5,13 @@ desc: "The White Circle is a community for Cyber/Information Security students, 
 image: images/twc_og_banner.jpg
 ---
 
-<div class="score-container">
-    <table>
-        <col style="width:100%" align="center">
-        <tr>
-            <th class="white-text">WRITEUPS</th>
-        </tr>
-        {% for entry in site.data.writeups %}
-            <tr>
-                <td class="green-text">
-                    <a href="{{ entry.url }}">{{ entry.name }}</a>
-                </td>
-            </tr>
-        {% endfor %}
-    </table>
+<h2 class="card-title white-text">WRITEUPS</h2>
+
+<div class="wu-container">
+    {% for entry in site.data.writeups %}
+    <div data-augmented-ui=" tl-clip br-clip both" class="aui-theme wu-btn m10" onclick="location.href='{{ site.url }}{{ page.url }}{{ entry.url }}';">
+        <span class="cyan-text">{{ entry.name }}</span>
+    </div>
+    {% endfor %}
 </div>
 
