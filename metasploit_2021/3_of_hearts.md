@@ -2,7 +2,9 @@
 
 > Solved too late by : Starry-lord
 
-```Port 33337```
+```
+Port 33337
+```
 
 I solved this one after the competition but still felt compelled to share the process.
 
@@ -10,11 +12,15 @@ This one gave me a hard time, firstly because I hadn't seen HTTP request smuggli
 
 Trying to connect to the target IP:33337 redirects to a domain name 
 
-```threeofhearts.ctf.net```
+```
+threeofhearts.ctf.net
+```
 
 And displays an empty page with only the following content:
 
-```<script>console.log(zp2)</script>```
+```
+<script>console.log(zp2)</script>
+```
 
 Some snooping showed me the initial request was made to an Apache traffic server 7.1.1 and the second one to an Nginx server 1.15.5. 
 After a few research I realized there wasn't much resource on the subject, but here's what I found :

