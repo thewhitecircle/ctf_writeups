@@ -1,5 +1,6 @@
 # CTF WriteUps by TWC
 
+* [MetaSploit 2021](metasploit_2021/README.md)
 * [HacktivityCon 2021](hacktivitycon_2021/README.md)
 * [UIUCTF 2021](uiuctf_2021/README.md)
 * [HSCTF 2021](hsctf_2021/README.md)
