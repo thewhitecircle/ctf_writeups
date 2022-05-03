@@ -1,5 +1,6 @@
 # CTF WriteUps by TWC
 
+* [Nahamcon 2022](nahamcon_2022/README.md)
 * [MetaSploit 2021](metasploit_2021/README.md)
 * [HacktivityCon 2021](hacktivitycon_2021/README.md)
 * [UIUCTF 2021](uiuctf_2021/README.md)
