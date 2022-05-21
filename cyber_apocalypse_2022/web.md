@@ -7,8 +7,8 @@
 
 The downloadable files gives us a few clues in the files in requirements.txt and util.py:
 
-1. It’s a python environment
-2. It uses a vulnerable version of the python Pillow library
+* It’s a python environment
+* It uses a vulnerable version of the python Pillow library
 
 ![](https://i.imgur.com/oeEjFBA.png)
 
