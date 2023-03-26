@@ -144,6 +144,7 @@ Which does means that we solved but we need to do some couple of extra answers t
 
 Let’s go one by one
 
+```
 1. ELF, as this is a linux binary
 2. Check architecture by running `file` command on this binary
 3. run `ldd` to see the libraries used for various purposes
@@ -154,6 +155,7 @@ Let’s go one by one
 8. Password Two, we have it
 9. Check the `exam()` function and in the `xor` statement, the fourth parameter in decimal form is our answer to this question
 10. Password Three, we have it
+```
 
 We get our flag - `HTB{l1c3ns3_4cquir3d-hunt1ng_t1m3!}`
 as always keep hacking : D
@@ -226,8 +228,10 @@ Copying all the hex values present in *t* and *m2;* and performing XOR using onl
 
 For Example: bits in t and m2 respectively are:
 
+```
 1. t: 2c 4a b7 
 2. m2 : 64 1e f5 
+```
 
 Flag : HTB....so on 
 

