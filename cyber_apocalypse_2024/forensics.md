@@ -465,11 +465,11 @@ HTB{IL_st0mp1ng_4nd_h1b3rn4t10n_f0r_th3_gr4nd_f1n4l!!}
 - So that means that the encryptor is in the quarantine and we can extract it
 - Slight issue was that these files are encrypted too but we quickly found solutions for that such as :
 
-
+```
 https://blog.khairulazam.net/2023/12/12/extracting-quarantine-files-from-windows-defender/
 
 https://github.com/zam89/Windows-Defender-Quarantine-File-Decryptor
-
+```
 
 ![](https://i.imgur.com/V8Q4XOF.png)
 
