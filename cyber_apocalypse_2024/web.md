@@ -157,9 +157,11 @@ mv /flag.txt /flag$(cat /dev/urandom | tr -cd "a-f0-9" | head -c 10).txt
 ```
 
 - Velocity v1.7 is vulnerable to SSTI attack
-- References
-    - https://antgarsil.github.io/posts/velocity/
-    - https://iwconnect.com/apache-velocity-server-side-template-injection/
+- References :
+```
+https://antgarsil.github.io/posts/velocity/
+https://iwconnect.com/apache-velocity-server-side-template-injection/
+```
 - Based on the PoC above we ran the test case
 
 ```
