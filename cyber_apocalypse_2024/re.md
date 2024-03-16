@@ -19,10 +19,10 @@ fire up your ghidra, let’s have a look at the functions, the `entered` functio
 `HTB{unp4ck3d_th3_s3cr3t_0f_th3_p455w0rd}`
 pwned!
 
-----------
+---
 
 ## LootStash
-> solved by : Starry-lord
+> Solved by : Starry-lord
 
 Since I don’t really dive into reversing usually, I decided to try my luck with tools like ghidra for the occasion.
 
@@ -42,13 +42,15 @@ Then curiosity made the rest possible, since i wanted to find some sort of patte
 ![finding the flag v1](https://i.imgur.com/hNrPN1w.png)
 
 
-After all of this, realise you could’ve actualy just use strings:
+After all of this, realised you could’ve actually just used strings:
 
 
 ![](https://i.imgur.com/FxDZCAC.png)
 
 
-```HTB{n33dl3_1n_a_l00t_stack}```
+```
+HTB{n33dl3_1n_a_l00t_stack}
+```
 
 ---
 

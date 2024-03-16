@@ -762,7 +762,9 @@ We need to understand which data has been obtained from this attack to reclaim c
 - Converting ASCII values to text gives us an interesting string, this is the IV for AES
 - multiple TCP packets have data field which contain encrypted strings which can be extracted using `tshark` :
 
-`> tshark -T fields -e data -r capture.pcap > data.txt `
+```
+> tshark -T fields -e data -r capture.pcap > data.txt
+```
 
 - Now let’s look at decryption process
 - `EZRATclient.Utils/Constantes.cs` contains the encryption key
@@ -882,7 +884,9 @@ HTB{c0mmun1c4710n5_h45_b33n_r3570r3d_1n_7h3_h34dqu4r73r5}
 ## Pursue the tracks
 > Solved by : thewhiteh4t
 
-`To get the flag, you need to answer the questions from the docker instance.`
+```
+To get the flag, you need to answer the questions from the docker instance.
+```
 
 
 - We get a `.mft` file in this challenge and we need to answer questions based on that

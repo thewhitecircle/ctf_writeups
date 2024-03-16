@@ -31,7 +31,9 @@ We then notice a few Messages are ready so we can click to see whats going on in
 ![flag in messages](https://i.imgur.com/h4ZZpj9.png)
 
 
-```HTB{th3_hunt3d_b3c0m3s_th3_hunt3r}```
+```
+HTB{th3_hunt3d_b3c0m3s_th3_hunt3r}
+```
 
 ---
 

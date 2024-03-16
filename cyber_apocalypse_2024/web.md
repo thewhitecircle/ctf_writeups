@@ -111,7 +111,9 @@ With the valid token we retrieved, and the correct role name, we can now craft a
 ![](https://i.imgur.com/X6jWB1g.png)
 
 
-```HTB{h4Pr0Xy_n3v3r_D1s@pp01n4s}```
+```
+HTB{h4Pr0Xy_n3v3r_D1s@pp01n4s}
+```
 
 ---
 
@@ -123,7 +125,9 @@ With the valid token we retrieved, and the correct role name, we can now craft a
 - Upon inspecting source files, we noticed few things : 
     - flag file is partially randomized in `entrypoint.sh`
 
-```mv /flag.txt /flag$(cat /dev/urandom | tr -cd "a-f0-9" | head -c 10).txt```
+```
+mv /flag.txt /flag$(cat /dev/urandom | tr -cd "a-f0-9" | head -c 10).txt
+```
 
 - In `pom.xml` we can see the dependencies and their version information :
 
