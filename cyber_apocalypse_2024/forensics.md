@@ -12,7 +12,7 @@ Running this file will actually kill your current user session authentication. U
 
 Reverse 1 and decode 2 for the flag:
 
-`HTB{w1ll_y0u_St4nd_y0uR_Gr0uNd!!}`
+```HTB{w1ll_y0u_St4nd_y0uR_Gr0uNd!!}```
 
 ---
 
@@ -31,7 +31,7 @@ This time it comes as an email file, along with an attachment called onlineform.
 ![VBSript hidden into an online html form](https://i.imgur.com/D4gfubx.png)
 
 
-`HTB{4n0th3r_d4y_4n0th3r_ph1shi1ng_4tt3mpT}`
+```HTB{4n0th3r_d4y_4n0th3r_ph1shi1ng_4tt3mpT}```
 
 ---
 
@@ -49,7 +49,7 @@ We can see a connection at around 4:00 AM which is not the usual legitimate user
 ![flag](https://i.imgur.com/a2dB23g.png)
 
 
-`HTB{B3sT_0f_luck_1n_th3_Fr4y!!}`
+```HTB{B3sT_0f_luck_1n_th3_Fr4y!!}```
 
 ---
 
@@ -156,7 +156,7 @@ Automated solution using a python script :
 ![](https://i.imgur.com/Emb4p1i.png)
 
 
-`HTB{Th3Phr3aksReadyT0Att4ck}`
+```HTB{Th3Phr3aksReadyT0Att4ck}```
 
 ---
 
@@ -362,7 +362,7 @@ It decrypted the content of the other file with using the same value for IV and 
 ![b64 part 2 of flag](https://i.imgur.com/NynKykK.png)
 
 
-`HTB{fr33_N17r0G3n_3xp053d!_b3W4r3_0f_T00_g00d_2_b3_7ru3_0ff3r5}` 
+```HTB{fr33_N17r0G3n_3xp053d!_b3W4r3_0f_T00_g00d_2_b3_7ru3_0ff3r5}```
 
 ---
 
@@ -405,7 +405,7 @@ We can see this hidden shellcode is checking for a specific hostname in the wind
 ![Insane flag finally](https://i.imgur.com/pb8X7KW.png)
 
 
-`HTB{IL_st0mp1ng_4nd_h1b3rn4t10n_f0r_th3_gr4nd_f1n4l!!}`
+```HTB{IL_st0mp1ng_4nd_h1b3rn4t10n_f0r_th3_gr4nd_f1n4l!!}```
 
 
 ----------

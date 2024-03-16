@@ -48,7 +48,7 @@ After all of this, realise you could’ve actualy just use strings:
 ![](https://i.imgur.com/FxDZCAC.png)
 
 
-`HTB{n33dl3_1n_a_l00t_stack}`
+```HTB{n33dl3_1n_a_l00t_stack}```
 
 ---
 
