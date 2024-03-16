@@ -905,9 +905,11 @@ To get the flag, you need to answer the questions from the docker instance.
 
 - We get a `.mft` file in this challenge and we need to answer questions based on that
 - Tools used :
-    - analyzeMFT.py - https://github.com/dkovar/analyzeMFT
-    - MFTExplorer - https://www.sans.org/tools/mftexplorer/
-    - MFTECmd - https://github.com/EricZimmerman/MFTECmd
+```
+analyzeMFT.py - https://github.com/dkovar/analyzeMFT
+MFTExplorer - https://www.sans.org/tools/mftexplorer/
+MFTECmd - https://github.com/EricZimmerman/MFTECmd
+```
 - First we extracted the data in CSV format on linux : 
     - `analyzeMFT.py -f z.mft -o result.csv`
 
