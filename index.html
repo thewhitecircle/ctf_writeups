@@ -34,7 +34,7 @@ image: images/twc_og_banner.jpg
 </div>
 
 <div class="wu-container">
-    {% for entry in site.data.test %}
+    {% for entry in site.data.ctf_writeups %}
     <div data-augmented-ui=" tl-clip br-clip both" class="aui-theme wu-btn m10" onclick="location.href='{{ site.url }}{{ page.url }}{{ entry[0] | replace: ' ', '_' | downcase }}';">
         <span class="cyan-text">{{ entry[0] }}</span>
     </div>
