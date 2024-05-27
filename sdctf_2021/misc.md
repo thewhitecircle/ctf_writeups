@@ -1,6 +1,6 @@
 # misc
 
-## **No flag for you**
+## No flag for you
 > Solved By : Taz
 
 * We found out that `ls`, `cat`, `echo` commands were available.
@@ -28,7 +28,7 @@ echo "$(</home/user/run/opt/flag-b01d7291b94feefa35e6.txt)"
 
 ![](https://i.imgur.com/pPB49gk.png)
 
----
+----------
 
 ## Alternative Arithmetic 
 > Solved By : Ava and choco
@@ -173,7 +173,8 @@ boolean isLucky(float magic) {
 > We can simply represent the float value as `1.0E8` too
 > 
 > hence, the answer is within the range of `1E8 to 9.999E9`
----
+
+----------
 
 ## Alternative Arithmetic (Final Flag)
 > Solved By : nigamelastic and choco

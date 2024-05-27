@@ -1,4 +1,4 @@
-# 10 of clubs
+## 10 of clubs
 
 > Solved by: Starry-Lord
 

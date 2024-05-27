@@ -1,4 +1,4 @@
-# 3 of hearts
+## 3 of hearts
 
 > Solved too late by : Starry-lord
 
@@ -33,7 +33,7 @@ Sadly no time for going through academy through the ctf but will definitely look
 
 I used 2 ways to try and see what was going on :
 
-## Way n°1 - CLI
+### Way n°1 - CLI
 
 ```
 printf 'GET_/somthingthatdoesntexist_HTTP/1.1\r\n'\
@@ -118,7 +118,7 @@ Headers:
 └─$ 
 ```
 
-## WAY n°2 - BurpSuite
+### WAY n°2 - BurpSuite
 
 It also worked with just a 0 in between GET requests and would be easier to input to burpsuite. 
 

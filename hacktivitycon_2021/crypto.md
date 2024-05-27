@@ -21,7 +21,7 @@
 
 here we have the flag.
 
----
+----------
 
 ## N1TP
 > Solved By : choco
@@ -103,7 +103,7 @@ and manually repeated until we get C - C1 as 0
 
 flag: `flag{9276cdb76a3dd6b1f523209cd9c0a11b}`
 
----
+----------
 
 ## TRIFORCE
 > Solved By : choco

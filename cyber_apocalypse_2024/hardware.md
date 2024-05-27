@@ -35,7 +35,7 @@ We then notice a few Messages are ready so we can click to see whats going on in
 HTB{th3_hunt3d_b3c0m3s_th3_hunt3r}
 ```
 
----
+----------
 
 ## Maze
 > Solved by : thewhiteh4t

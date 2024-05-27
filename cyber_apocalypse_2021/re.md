@@ -33,6 +33,8 @@
 
 ![](https://i.imgur.com/L1LwiNM.png)
 
+----------
+
 ## Passphrase
 
 > Solved by chronocruz.exe

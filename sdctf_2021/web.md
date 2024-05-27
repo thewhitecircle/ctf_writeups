@@ -147,7 +147,7 @@ request body must be json
 
 ![](https://i.imgur.com/rs1uck3.png)
 
----
+----------
 
 ## GETS Request
 > Solved By : thewhiteh4t
@@ -178,7 +178,7 @@ if(req.query.n.length > BUFFER_SIZE) {
 
 ![](https://i.imgur.com/wyyLaq7.png)
 
----
+----------
 
 ## Git Good
 > Solved By : thewhiteh4t

@@ -25,6 +25,8 @@ us3full_1nf0rm4tion}
 * in js.main we will also find the last piece of our flag:1nsp3ction_
 * the full flag ended up being :`CHTB{1nsp3ction_c4n_r3ve4l_us3full_1nf0rm4tion}`
 
+----------
+
 ## Cass
 
 > Solved by : thewhiteh4t
@@ -34,7 +36,7 @@ us3full_1nf0rm4tion}
 
 ![](https://i.imgur.com/BSK49kM.png)
 
----
+----------
 
 ## DAAS
 
@@ -91,7 +93,7 @@ php -d'phar.readonly=0' ./phpggc --phar phar -o /tmp/exploit.phar --fast-destruc
 CHTB{wh3n_7h3_d3bu663r_7urn5_4641n57_7h3_d3bu6633}
 ```
 
----
+----------
 
 ## MiniSTRyplace
 
@@ -122,7 +124,7 @@ http://46.101.77.180:32490/?lang=....//....//....//....//....//....//....//..../
 http://165.227.234.7:30779/?lang=....//....//flag
 ```
 
----
+----------
 
 ## Wild Goose Hunt
 

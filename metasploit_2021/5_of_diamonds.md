@@ -1,4 +1,4 @@
-# 5 of diamonds
+## 5 of diamonds
 
 > Solved by: Starry-Lord, Thewhiteh4t, Bobbysox
 
@@ -12,7 +12,7 @@ We managed to get the password out from the database, which was a very long alph
 
 Passing the password with burp solved the problem and displayed a link to flag.png
 
-## Afterthought
+### Afterthought
 
 We could bypass login through the username field with 
 

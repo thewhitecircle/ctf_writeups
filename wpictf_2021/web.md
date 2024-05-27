@@ -35,7 +35,7 @@
 
 ![](https://imgur.com/a/pt0esJv)
 
----
+----------
 
 ## wpi admin 2
 
@@ -55,7 +55,7 @@
 
 ![](https://i.imgur.com/sUzWapJ.png)
 
----
+----------
 
 ## wpi admin 3
 

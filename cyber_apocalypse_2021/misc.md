@@ -64,7 +64,7 @@
         solve(conn)
 ```
 
----
+----------
 
 ## Input as a service
 
@@ -93,7 +93,7 @@ __import__('so'[::-1]).system('cat flag.txt')
 CHTB{4li3n5_us3_pyth0n2.X?!}
 ```
 
----
+----------
 
 ## Robotic Infiltration
 

@@ -45,6 +45,8 @@ ctrl+d to escape the python like shell
 
 Used CyberChef and python to decode the strings
 
+----------
+
 ## Quirky
 > Solved By : nigamelastic
 

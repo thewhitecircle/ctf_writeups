@@ -58,7 +58,7 @@ print(r.text)
 
 ![](https://i.imgur.com/257p2bC.png)
 
----
+----------
 
 ## Key-Lottery
 > Solved by: Taz34
@@ -99,7 +99,7 @@ And here we have the flag:
 
 ![](https://i.imgur.com/0x1x0RQ.png)
 
----
+----------
 
 ## M0leFans
 > Solved By : thewhiteh4t

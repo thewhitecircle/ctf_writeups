@@ -139,5 +139,3 @@ And solved:
 
 ![](https://i.imgur.com/AVK9rWh.png)
 
-----------
-

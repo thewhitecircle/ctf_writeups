@@ -30,6 +30,8 @@
 CHTB{pH1sHiNg_w0_m4cr0s???}
 ```
 
+----------
+
 ## Invitation
 
 > Solved By : Starry-Lord
@@ -81,7 +83,7 @@ _the_new_meta}
 CHTB{maldocs_are_the_new_meta}
 ```
 
----
+----------
 
 ## Oldest trick in the book
 

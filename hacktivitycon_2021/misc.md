@@ -42,7 +42,7 @@ luckily `$()` isn’t so i crafted the payload and got the flag:
     cat $(echo -e "\x2f\x6f\x70\x74\x2f\x66\x6c\x61\x67\x2e\x74\x78\x74") 
     flag{82ad133488ad326eaf2120e03253e5d7}
 
----
+----------
 
 ## WORD CHURCH
 > Solved By : choco
@@ -294,7 +294,6 @@ The execution script:
 
 
 `flag{ac670e1f34da9eb748b3f241eb03f51b}`
-  
 
 ----------
 

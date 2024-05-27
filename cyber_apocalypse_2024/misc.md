@@ -45,7 +45,7 @@ In this challenge the server is giving us the flag if we put the index value. Fo
 Flag: HTB{tH15_1s_4_r3aLly_l0nG_fL4g_i_h0p3_f0r_y0Ur_s4k3_tH4t_y0U_sCr1pTEd_tH1s_oR_els3_iT_t0oK_qU1t3_l0ng!!}
 ```
 
----
+----------
 
 ## Stop Drop and Roll
 > Solved by : Legend
@@ -115,7 +115,7 @@ For example if it says `GORGE` we need to respond `STOP`, if `GORGE, FIRE` we ne
 The flag is: HTB{1_wiLl_sT0p_dR0p_4nD_r0Ll_mY_w4Y_oUt!}
 ```
 
----
+----------
 
 ## Unbreakable
 > Solved by : thewhiteh4t

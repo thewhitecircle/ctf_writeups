@@ -12,7 +12,7 @@ Go to the simple quiz section and here we have the flag.
 flag{th3_an5w3r_w4s_HSCTF_0bvi0us1y}
 ```
 
----
+----------
 
 ## message-board
 > Solved by: Taz34
@@ -64,7 +64,7 @@ username = admin
 flag{y4m_y4m_c00k13s}
 ```
 
----
+----------
 
 ## NRC - no right click
 > Solved By : Starry-Lord
@@ -77,9 +77,9 @@ view-source:https://no-right-click.hsc.tf/useless-file.css
 
 ![](https://i.imgur.com/euUZBnG.jpg)
 
----
+----------
 
-# big blind
+## big blind
 > Solved By : thewhiteh4t
 
 
@@ -157,7 +157,7 @@ while flag.endswith('}') != True:
 
 ![](https://i.imgur.com/fAdPjA5.png)
 
----
+----------
 
 ## Digits of Pi 1
 > Solved By : Starry-Lord

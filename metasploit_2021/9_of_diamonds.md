@@ -1,4 +1,4 @@
-# 9 of diamonds
+## 9 of diamonds
 
 > Solved By : thewhiteh4t
 

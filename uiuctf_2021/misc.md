@@ -34,7 +34,7 @@
 
 `uiuctf{doot_d0ot_do0t_arent_you_tired_of_the_int4rnet?}`
 
----
+----------
 
 ## Emote
 > Solved by : Starry-Lord

@@ -19,7 +19,7 @@ fire up your ghidra, let’s have a look at the functions, the `entered` functio
 `HTB{unp4ck3d_th3_s3cr3t_0f_th3_p455w0rd}`
 pwned!
 
----
+----------
 
 ## LootStash
 > Solved by : Starry-lord
@@ -52,7 +52,7 @@ After all of this, realised you could’ve actually just used strings:
 HTB{n33dl3_1n_a_l00t_stack}
 ```
 
----
+----------
 
 ## Boxcutter
 > Solved by : thewhiteh4t

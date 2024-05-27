@@ -8,7 +8,7 @@
 
 ![](https://i.imgur.com/i1nTuhA.png)
 
----
+----------
 
 ## A prime hash candidate
 > Solved by : thewhiteh4t

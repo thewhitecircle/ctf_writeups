@@ -1,4 +1,4 @@
-# 4 of diamonds
+## 4 of diamonds
 
 > Solved by: Starry-Lord
 

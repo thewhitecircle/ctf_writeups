@@ -81,108 +81,7 @@ contract_instance.functions.updateSensors(10).transact()
 
 ![](https://i.imgur.com/hvXqjqQ.png)
 
-----------
-
-
-## Shooting 101
-> Solved by : thewhiteh4t
-
-
-- In this challenge we are introduced with `fallback` , `receive`  and `modifiers`
-- in ShootingArea.sol three modifiers are present like :
-
-```
-    modifier firstTarget() {
-            require(!firstShot && !secondShot && !thirdShot);
-            _;
-        }
-```
-
-- Require as the name suggests waits for the conditions to become satisfactory
-- when the conditions are satisfied it uses a wildcard merge i.e. `_;`
-- firstTarget modifier is mentioned in the following section of the code :
-
-```
-    fallback() external payable firstTarget {
-            firstShot = true;
-        }
-```
-
-- This means that fallback() will only execute when conditions in firstTarget are satisfied
-- when fallback will run `firstShot` will become `True`
-- similarly there are two more modifiers with different conditions
-- in my understanding (don’t trust this) fallback is called if a non existent function is called or if random data is sent to the contract in a transaction
-- after calling fallback receive is usable and finally third function is usable
-- while trying I was trying to use `transact()`  on them but they were throwing errors
-- they work in the specific order in this challenge (maybe?)
-- Here is the script :
-
-
-```python
-from web3 import Web3
-from web3 import exceptions
-from solcx import compile_source
-import time
-
-w3 = Web3(Web3.HTTPProvider('http://104.248.169.177:30380'))
-
-print(f'Connected : {w3.is_connected()}\n')
-
-target = '0x09c3Dfe533774564a7761b5fEC15Ff5b0264Ec64'
-addr = '0x73Fca728DbD9592D28DF01f8a63427912498a50E'
-
-with open('ShootingArea.sol', 'r') as solfile:
-    sol_code = solfile.read()
-
-compiled_sol = compile_source(sol_code, output_values=['abi', 'bin'])
-contract_id, contract_interface = compiled_sol.popitem()
-abi = contract_interface['abi']
-
-contract_instance = w3.eth.contract(address=target, abi=abi)
-
-f_shot = contract_instance.functions.firstShot().call()
-s_shot = contract_instance.functions.secondShot().call()
-t_shot = contract_instance.functions.thirdShot().call()
-
-print(f'First Shot : {f_shot}')
-print(f'Second Shot : {s_shot}')
-print(f'Third Shot : {t_shot}\n')
-
-
-print('Hitting First Target...')
-w3.eth.send_transaction({
-    'to': target,
-    'from': addr,
-    'value': 0,
-    'data': '0x1'
-})
-upd_f_shot = contract_instance.functions.firstShot().call()
-print(f'First Shot : {upd_f_shot}')
-
-print('Hitting Second Target...')
-contract_instance.receive.transact()
-upd_s_shot = contract_instance.functions.secondShot().call()
-print(f'Second Shot : {upd_s_shot}')
-
-print('Hitting Third Target...')
-contract_instance.functions.third().transact()
-upd_t_shot = contract_instance.functions.thirdShot().call()
-print(f'Third Shot : {upd_t_shot}')
-```
-
-
-![](https://i.imgur.com/LZqv0jz.png)
-
-- To solve we need to hit all three targets i.e. turn all to True :
-
-
-![](https://i.imgur.com/JBZvlfz.png)
-
-----------
-
-
-## nigamelastic’s Solution to the two Blockchain challenges
-## Navigating the unknown
+### nigamelastic's method
 
 A lot of stuff to install
 web3py
@@ -281,10 +180,105 @@ yeah all of that is BS, screw python learn nodejs like this:
 
 to get the flag
 
-
 ----------
-## Shooting 101
 
+
+## Shooting 101
+> Solved by : thewhiteh4t
+
+
+- In this challenge we are introduced with `fallback` , `receive`  and `modifiers`
+- in ShootingArea.sol three modifiers are present like :
+
+```
+    modifier firstTarget() {
+            require(!firstShot && !secondShot && !thirdShot);
+            _;
+        }
+```
+
+- Require as the name suggests waits for the conditions to become satisfactory
+- when the conditions are satisfied it uses a wildcard merge i.e. `_;`
+- firstTarget modifier is mentioned in the following section of the code :
+
+```
+    fallback() external payable firstTarget {
+            firstShot = true;
+        }
+```
+
+- This means that fallback() will only execute when conditions in firstTarget are satisfied
+- when fallback will run `firstShot` will become `True`
+- similarly there are two more modifiers with different conditions
+- in my understanding (don’t trust this) fallback is called if a non existent function is called or if random data is sent to the contract in a transaction
+- after calling fallback receive is usable and finally third function is usable
+- while trying I was trying to use `transact()`  on them but they were throwing errors
+- they work in the specific order in this challenge (maybe?)
+- Here is the script :
+
+
+```python
+from web3 import Web3
+from web3 import exceptions
+from solcx import compile_source
+import time
+
+w3 = Web3(Web3.HTTPProvider('http://104.248.169.177:30380'))
+
+print(f'Connected : {w3.is_connected()}\n')
+
+target = '0x09c3Dfe533774564a7761b5fEC15Ff5b0264Ec64'
+addr = '0x73Fca728DbD9592D28DF01f8a63427912498a50E'
+
+with open('ShootingArea.sol', 'r') as solfile:
+    sol_code = solfile.read()
+
+compiled_sol = compile_source(sol_code, output_values=['abi', 'bin'])
+contract_id, contract_interface = compiled_sol.popitem()
+abi = contract_interface['abi']
+
+contract_instance = w3.eth.contract(address=target, abi=abi)
+
+f_shot = contract_instance.functions.firstShot().call()
+s_shot = contract_instance.functions.secondShot().call()
+t_shot = contract_instance.functions.thirdShot().call()
+
+print(f'First Shot : {f_shot}')
+print(f'Second Shot : {s_shot}')
+print(f'Third Shot : {t_shot}\n')
+
+
+print('Hitting First Target...')
+w3.eth.send_transaction({
+    'to': target,
+    'from': addr,
+    'value': 0,
+    'data': '0x1'
+})
+upd_f_shot = contract_instance.functions.firstShot().call()
+print(f'First Shot : {upd_f_shot}')
+
+print('Hitting Second Target...')
+contract_instance.receive.transact()
+upd_s_shot = contract_instance.functions.secondShot().call()
+print(f'Second Shot : {upd_s_shot}')
+
+print('Hitting Third Target...')
+contract_instance.functions.third().transact()
+upd_t_shot = contract_instance.functions.thirdShot().call()
+print(f'Third Shot : {upd_t_shot}')
+```
+
+
+![](https://i.imgur.com/LZqv0jz.png)
+
+- To solve we need to hit all three targets i.e. turn all to True :
+
+
+![](https://i.imgur.com/JBZvlfz.png)
+
+
+### nigamelastic's method
 
     const Web3 = require('web3');
     const web3 = new Web3('http://165.232.108.240:31803');
@@ -507,8 +501,5 @@ For the third run this:
     });
 
 All three conditions met we get the flag
-
-
-----------
 
 

@@ -59,7 +59,7 @@ It matches hence we have the right flag.
 flag{QWERTYUIOP}
 ```
 
----
+----------
 
 ## opisthocomus-hoazin
 > Solved by: Taz34
@@ -120,7 +120,9 @@ Now i used Sublime text to replace all the values with there specific letters to
 flag{tH1s_ic3_cr34m_i5_So_FroZ3n_i"M_pr3tTy_Sure_iT's_4ctua1ly_b3nDinG_mY_5p0On}
 ```
 
-# **Queen of the hill**
+----------
+
+## queen-of-the-hill
 > Solved By : Starry-Lord
 
 ![](https://i.imgur.com/pPTp4fp.jpg)

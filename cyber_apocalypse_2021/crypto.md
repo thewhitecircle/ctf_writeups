@@ -31,7 +31,7 @@ Cyberchef recipe :
     ]
 ```
 
----
+----------
 
 ## PhaseStream 1
 
@@ -74,7 +74,7 @@ Cyberchef recipe :
 Flag: CHTB{u51ng_kn0wn_pl41nt3xt}
 ```
 
----
+----------
 
 ## SoulCrabber 1
 

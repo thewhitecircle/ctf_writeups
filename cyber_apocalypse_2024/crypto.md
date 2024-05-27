@@ -38,7 +38,7 @@ To solve this I used http://www.factordb.com/ to get the value of `p` and `q` an
 Flag: HTB{0h_d4mn_4ny7h1ng_r41s3d_t0_0_1s_1!!!}
 ```
 
----
+----------
 
 ## Makeshift
 > Solved by: Legend
@@ -72,7 +72,7 @@ For this challenge we are given the code in which the flag is just getting shift
 HTB{4_b3tTeR_w3apOn_i5_n3edeD!?!}
 ```
 
----
+----------
 
 ## Dynastic
 > Solved by : Starry-lord

@@ -59,7 +59,7 @@ the VI is fixed, so with the small possible set of keys and a fixed VI we can ea
 
 ```flag: uiuctf{omae_ha_mou_shindeiru_b9e5f9}```
 
----
+----------
 
 ## back_to_basics
 > Solved by : choco

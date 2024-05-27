@@ -1,5 +1,7 @@
 # Hardware
 
+## Serial Logs:
+
 > Solved by : Nigamelastic
 
 * `.sal` files are saleae logic analyzer files. 
@@ -7,10 +9,6 @@
 so i downloaded the sla logic analyzer
 https://www.saleae.com/downloads/
 * from here after installing, i opened the sal files which i could and then the following:
-
-
-## Serial Logs:
-
 * I imported the value i am pretty sure if i find the right analyzer it should work
 
 ![](https://i.imgur.com/mO5s5Lx.png)
@@ -53,9 +51,11 @@ https://www.dropbox.com/s/ztqoa16wvp6rvf6/message.txt?dl=0
 CHTB{wh47?!_f23qu3ncy_h0pp1n9_1n_4_532141_p2070c01?!!!52}
 ```
 
----
+----------
 
 ## Compromised
+
+> Solved by : Nigamelastic
 
 * import the file in salea logic analyzer, and use i2c analyzer
 * export the data and you will see two columns if we take everything written and try the  hex dump we get

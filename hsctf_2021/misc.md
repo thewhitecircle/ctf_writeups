@@ -13,7 +13,7 @@ After doing some basic analysis I passed it through stegsolve and changed some p
 flag{plte_chunks_remind_me_of_gifs}
 ```
 
----
+----------
 
 ## glass-windows
 > Solved by: Taz34
@@ -28,7 +28,7 @@ Similarly as the previous i used stegsolve and changed some planes to get the fl
 flag{this_is_why_i_use_premultiplied_alpha}
 ```
 
----
+----------
 
 ## c-brother-1
 > Solved By : thewhiteh4t
@@ -75,7 +75,7 @@ Watermark : https://i.ytimg.com/an/qZq81jZcdjAHQJ3UtAbdaA/featured_channel.jpg
 
 ![](https://i.imgur.com/q0B8qxd.png)
 
----
+----------
 
 ## Geographic 1
 > Solved By : Ava and Starry-Lord
@@ -100,9 +100,9 @@ Round up
 43.938,12.446
 ```
 
----
+----------
 
-## **Geographic 2**
+## Geographic 2
 > Solved By : Starry-Lord
 
 **Image** **1**
@@ -134,7 +134,7 @@ CERVESA ALPHA
 
 https://maps.app.goo.gl/Uk4EBhjeHtNKZP996
 
----
+----------
 
 ## seeded randomizer
 > Solved By : thewhiteh4t

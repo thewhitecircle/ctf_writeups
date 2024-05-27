@@ -15,7 +15,7 @@ https://www.math.ucsd.edu/people/profiles/daniel-kane/
 
 **FLAG**: `Daniel Kane`
 
----
+----------
 
 ## hIDe and seek
 > Solved By : Taz
@@ -37,7 +37,7 @@ First : ?v=hqXOIZtRYZU
 sdctf{W0w_1_h4D_n0_ID3a!}
 ```
 
----
+----------
 
 ## hIDe and seek 2
 > Solved By : Ava and nigamelastic
@@ -96,14 +96,14 @@ https://discord.com/channels/675369276403744776/782835136654737429/8404728126902
 sdctf{m@st3R_h@Ck3R_4807}
 ```
 
----
+----------
 
 ## This flag has been stolen:
 > Solved By : nigamelastic
 
 * the flag is here : https://web.archive.org/web/20210130094941/https://sdc.tf/
 
----
+----------
 
 ## Speed-Studying 2 :
 > Solved By : Ava

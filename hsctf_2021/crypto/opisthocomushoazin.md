@@ -1,0 +1,73 @@
+---
+layout: load_md
+title: The White Circle | Hsctf 2021 | opisthocomus-hoazin Writeup
+desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+image: images/twc_og_banner.jpg
+ctf: Hsctf 2021
+parent: hsctf_2021
+category: crypto
+challenge: opisthocomus-hoazin
+tags: "crypto, taz, python"
+---
+
+<h1 class="heading card-title white-text">Hsctf 2021</h1>
+
+## opisthocomus-hoazin
+> Solved by: Taz34
+
+First opisthocomus-hoazin.py
+
+```python
+import time
+from Crypto.Util.number import *
+flag = open('flag.txt','r').read()
+p = getPrime(1024)
+q = getPrime(1024)
+e = 2**16+1
+n=p*q
+ct=[]
+for ch in flag:
+    ct.append((ord(ch)^e)%n)
+print(n)
+print(e)
+print(ct)
+```
+
+2nd is output.txt
+
+```
+15888457769674642859708800597310299725338251830976423740469342107745469667544014118426981955901595652146093596535042454720088489883832573612094938281276141337632202496209218136026441342435018861975571842724577501821204305185018320446993699281538507826943542962060000957702417455609633977888711896513101590291125131953317446916178315755142103529251195112400643488422928729091341969985567240235775120515891920824933965514217511971572242643456664322913133669621953247121022723513660621629349743664178128863766441389213302642916070154272811871674136669061719947615578346412919910075334517952880722801011983182804339339643
+65537
+[65639, 65645, 65632, 65638, 65658, 65653, 65609, 65584, 65650, 65630, 65640, 65634, 65586, 65630, 65634, 65651, 65586, 65589, 65644, 65630, 65640, 65588, 65630, 65618, 65646, 65630, 65607, 65651, 65646, 65627, 65586, 65647, 65630, 65640, 65571, 65612, 65630, 65649, 65651, 65586, 65653, 65621, 65656, 65630, 65618, 65652, 65651, 65636, 65630, 65640, 65621, 65574, 65650, 65630, 65589, 65634, 65653, 65652, 65632, 65584, 65645, 65656, 65630, 65635, 65586, 65647, 65605, 65640, 65647, 65606, 65630, 65644, 65624, 65630, 65588, 65649, 65585, 65614, 65647, 65660]
+```
+
+We can see the each vale in ct list is actually the n modulus(%) of the XOR (^) value of the ASCII values of the flag’s characters with e.
+
+We can verify it here, by encoding first letter of the flag i.e. “f”  and this is also the first letter in the ct list:
+
+![](https://i.imgur.com/RNRzeqQ.png)
+
+
+Now I have written a small script which encode out all the characters that can be used in the flag:
+
+```python
+import string
+chr_set = string.ascii_letters + string.digits + string.punctuation
+e = 65537
+n = 15888457769674642859708800597310299725338251830976423740469342107745469667544014118426981955901595652146093596535042454720088489883832573612094938281276141337632202496209218136026441342435018861975571842724577501821204305185018320446993699281538507826943542962060000957702417455609633977888711896513101590291125131953317446916178315755142103529251195112400643488422928729091341969985567240235775120515891920824933965514217511971572242643456664322913133669621953247121022723513660621629349743664178128863766441389213302642916070154272811871674136669061719947615578346412919910075334517952880722801011983182804339339643
+for i in range(len(chr_set)):
+    x = chr_set[i] + ": " + str((ord(chr_set[i])^e)%n)
+    print(x)
+```
+
+I also made a lookup.txt dictionary with all the elements of the ct list
+Now i used grep to get the elements we want form the script output:
+
+![](https://i.imgur.com/T15GvI8.png)
+
+Now i used Sublime text to replace all the values with there specific letters to get the flag
+
+```
+flag{tH1s_ic3_cr34m_i5_So_FroZ3n_i"M_pr3tTy_Sure_iT's_4ctua1ly_b3nDinG_mY_5p0On}
+```
+

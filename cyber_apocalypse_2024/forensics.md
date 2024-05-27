@@ -16,7 +16,7 @@ Reverse 1 and decode 2 for the flag:
 HTB{w1ll_y0u_St4nd_y0uR_Gr0uNd!!}
 ```
 
----
+----------
 
 ## Urgent
 > Solved by : Starry-Lord
@@ -37,7 +37,7 @@ This time it comes as an email file, along with an attachment called onlineform.
 HTB{4n0th3r_d4y_4n0th3r_ph1shi1ng_4tt3mpT}
 ```
 
----
+----------
 
 ## An Unusual sighting
 > Solved by : Starry-Lord
@@ -57,7 +57,7 @@ We can see a connection at around 4:00 AM which is not the usual legitimate user
 HTB{B3sT_0f_luck_1n_th3_Fr4y!!}
 ```
 
----
+----------
 
 ## Phreaky
 > Solved by : thewhiteh4t, Starry-Lord
@@ -168,7 +168,7 @@ Automated solution using a python script :
 HTB{Th3Phr3aksReadyT0Att4ck}
 ```
 
----
+----------
 
 ## Fake Boost
 > Solved by : Starry-lord
@@ -376,7 +376,7 @@ It decrypted the content of the other file with using the same value for IV and 
 HTB{fr33_N17r0G3n_3xp053d!_b3W4r3_0f_T00_g00d_2_b3_7ru3_0ff3r5}
 ```
 
----
+----------
 
 ## Oblique Final
 > Attempted by :  Starry-Lord, thewhiteh4t
@@ -643,7 +643,7 @@ https://github.com/zam89/Windows-Defender-Quarantine-File-Decryptor
 
 ![](https://i.imgur.com/F1XBI2w.png)
 
----
+----------
 
 ## Game Invitation
 > Solved by : thewhiteh4t
@@ -716,7 +716,7 @@ If chkDomain <> strUserDomain Then
 > HTB{m4ld0cs_4r3_g3tt1ng_Tr1cki13r}
 ```
 
----
+----------
 
 ## Data Siege
 > Solved by : thewhiteh4t
@@ -893,7 +893,7 @@ We need to understand which data has been obtained from this attack to reclaim c
 HTB{c0mmun1c4710n5_h45_b33n_r3570r3d_1n_7h3_h34dqu4r73r5}
 ```
 
----
+----------
 
 ## Pursue the tracks
 > Solved by : thewhiteh4t
