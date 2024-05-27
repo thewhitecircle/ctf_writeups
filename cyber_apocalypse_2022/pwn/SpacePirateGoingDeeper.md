@@ -1,18 +1,18 @@
 ---
 layout: load_md
-title: The White Circle | Cyber Apocalypse 2022 | Space Pirate : Going Deeper Writeup
+title: The White Circle | Cyber Apocalypse 2022 | Space Pirate Going Deeper Writeup
 desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
 image: images/twc_og_banner.jpg
 ctf: Cyber Apocalypse 2022
 parent: cyber_apocalypse_2022
 category: pwn
-challenge: Space Pirate : Going Deeper
+challenge: Space Pirate Going Deeper
 tags: "pwn, taz, bof, python"
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2022</h1>
 
-## Space Pirate : Going Deeper
+## Space Pirate Going Deeper
 > Solved by:  Taz34
 
 Here we have a 64 bit binary which takes input as follows:
