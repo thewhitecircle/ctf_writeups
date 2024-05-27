@@ -7,11 +7,136 @@ image: images/twc_og_banner.jpg
 
 <h2 class="card-title white-text">WRITEUPS</h2>
 
+<div class="ctf-cat-bar">
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="location.href='{{ site.url }}'">◀</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" id="sbtn">search</div>
+</div>
+
+<div id="modal-wrapper"></div>
+<div id="search-modal" class="modal">
+    <div class="modal-content">
+        <div class="s-close-btn-wrapper">
+            <button class="s-close-btn">&times;</button>
+        </div>
+
+        <div class="form-wrapper">
+            <form class="search-bar" id="search-form" onsubmit="searchWriteup();">
+                <fieldset class="search-fs">
+                    <legend class="white-text">&nbsp;SEARCH&nbsp;</legend>
+                    <input class="cyan-text" type="text" id="search-input">
+                </fieldset>
+            </form>
+        </div>
+        <div class="result-box white-text">
+            <ul id="search-resp"></ul>
+        </div>
+    </div>
+</div>
+
 <div class="wu-container">
-    {% for entry in site.data.writeups %}
-    <div data-augmented-ui=" tl-clip br-clip both" class="aui-theme wu-btn m10" onclick="location.href='{{ site.url }}{{ page.url }}{{ entry.url }}';">
-        <span class="cyan-text">{{ entry.name }}</span>
+    {% for entry in site.data.test %}
+    <div data-augmented-ui=" tl-clip br-clip both" class="aui-theme wu-btn m10" onclick="location.href='{{ site.url }}{{ page.url }}{{ entry[0] | replace: ' ', '_' | downcase }}';">
+        <span class="cyan-text">{{ entry[0] }}</span>
     </div>
     {% endfor %}
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ site.url }}/js/fuse.min.js"></script>
+
+<script>
+    var modal = document.getElementById("search-modal");
+    var btn = document.getElementById("sbtn");
+    var span = document.getElementsByClassName("s-close-btn")[0];
+    var wrapper = document.getElementById("modal-wrapper");
+    var outbox = document.getElementById("search-resp")
+    var sbInput = document.getElementById('search-input');
+
+    btn.onclick = function() {
+        wrapper.style.display = "block";
+        wrapper.style.backdropFilter = "blur(5px)";
+        modal.style.display = "flex";
+        sbInput.focus();
+    }
+
+    span.onclick = function() {
+        wrapper.style.display = "none";
+        wrapper.style.backdropFilter = "";
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            wrapper.style.display = "none";
+            wrapper.style.backdropFilter = "";
+            modal.style.display = "none";
+        }
+    }
+
+    const fuseOptions = {
+        isCaseSensitive: false,
+        keys: [
+            "title",
+            "tags"
+        ]
+    };
+
+    function searchWriteup(){
+        outbox.innerHTML = '';
+        query = document.getElementById("search-input").value;
+        $.getJSON("{{ site.url }}/ctf_search.json", function(data) {
+            const fuse = new Fuse(data, fuseOptions);
+            const results = fuse.search(query);
+            for (var i=0; i < results.length; i++){
+                var title = results[i]['title'];
+                var url = results[i]['url'];
+                var tags = results[i]['tags'];
+                out_li = document.createElement('li');
+                fragment = document.createDocumentFragment();
+                out_li.innerHTML = `<a href="${url}" target="_blank">${title}</a>`;
+                fragment.appendChild(out_li);
+                tag_list = tags.split(', ')
+                li_div = document.createElement('div');
+                li_div.classList.add('tag-row');
+                for (var j=0; j < tag_list.length; j++){
+                    li_div.innerHTML += `<button class="tag-btn" onclick="searchTag('${tag_list[j]}')">${tag_list[j]}</button>`
+                }
+                out_li.appendChild(li_div);
+                outbox.appendChild(fragment);
+            };
+        });
+    }
+
+    function searchTag(tagname){
+        outbox.innerHTML = '';
+        $.getJSON("{{ site.url }}/ctf_search.json", function(data) {
+            const fuse = new Fuse(data, fuseOptions);
+            const results = fuse.search(query);
+            for (var i=0; i < results.length; i++){
+                var title = results[i]['title'];
+                var url = results[i]['url'];
+                var tags = results[i]['tags'];
+                out_li = document.createElement('li');
+                fragment = document.createDocumentFragment();
+                out_li.innerHTML = `<a href="${url}" target="_blank">${title}</a>`;
+                fragment.appendChild(out_li);
+                tag_list = tags.split(', ')
+                li_div = document.createElement('div');
+                li_div.classList.add('tag-row');
+                for (var j=0; j < tag_list.length; j++){
+                    li_div.innerHTML += `<button class="tag-btn" onclick="searchTag('${tag_list[j]}')">${tag_list[j]}</button>`
+                }
+                out_li.appendChild(li_div);
+                outbox.appendChild(fragment);
+            };
+        });
+    }
+
+    $('input[type=text]').keypress(function(e) {
+    if (e.which == 13) {
+        e.preventDefault();
+        searchWriteup();
+    }
+});
+
+</script>
