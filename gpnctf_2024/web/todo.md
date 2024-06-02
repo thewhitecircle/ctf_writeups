@@ -49,7 +49,7 @@ default-src 'none'; script-src 'self' 'unsafe-inline';
 
 ![](https://i.imgur.com/J1hLfFK.png)
 
-- [Hacktricks | CSP Bypass](https://book.hacktricks.xyz/pentesting-web/content-security-policy-csp-bypass)
+- [Hacktricks CSP Bypass](https://book.hacktricks.xyz/pentesting-web/content-security-policy-csp-bypass)
 - so I tried to load `/script.js` in form action like this :
 
 ```html
