@@ -8,6 +8,8 @@ parent: wpictf_2021
 category: stego
 challenge: Glute
 tags: "stegano, ava, foremost"
+date: 2021-04-26T00:00:00+00:00
+last_update: 2021-04-26T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Wpictf 2021</h1>

@@ -8,6 +8,8 @@ parent: hsctf_2021
 category: misc
 challenge: c-brother-1
 tags: "misc, twh, osint"
+date: 2021-06-20T00:00:00+00:00
+last_update: 2021-06-20T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Hsctf 2021</h1>

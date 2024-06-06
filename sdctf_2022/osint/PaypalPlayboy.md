@@ -8,6 +8,8 @@ parent: sdctf_2022
 category: osint
 challenge: Paypal Playboy
 tags: "osint, starry, blockchain"
+date: 2022-05-10T00:00:00+00:00
+last_update: 2022-05-10T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Sdctf 2022</h1>

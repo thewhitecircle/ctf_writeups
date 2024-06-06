@@ -8,6 +8,8 @@ parent: uiuctf_2021
 category: forensics
 challenge: tablet 1
 tags: "forensics, twh"
+date: 2021-08-12T00:00:00+00:00
+last_update: 2021-08-12T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Uiuctf 2021</h1>

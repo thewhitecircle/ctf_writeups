@@ -8,6 +8,8 @@ parent: hacktivitycon_2021
 category: warmups
 challenge: TSUNAMI
 tags: "warmup, taz, stegano, sonic, spectogram"
+date: 2021-09-20T00:00:00+00:00
+last_update: 2021-09-20T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Hacktivitycon 2021</h1>

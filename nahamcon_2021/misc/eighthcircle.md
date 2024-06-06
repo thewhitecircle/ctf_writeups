@@ -8,6 +8,8 @@ parent: nahamcon_2021
 category: misc
 challenge: eighth_circle
 tags: "misc"
+date: 2021-03-15T00:00:00+00:00
+last_update: 2021-03-15T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Nahamcon 2021</h1>

@@ -8,6 +8,8 @@ parent: nahamcon_2022
 category: web
 challenge: EXtravagant
 tags: "web, nigamelastic, xxe"
+date: 2022-05-03T00:00:00+00:00
+last_update: 2022-05-03T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Nahamcon 2022</h1>

@@ -8,6 +8,8 @@ parent: sdctf_2022
 category: jail
 challenge: rbash warmup
 tags: "jail, twh, rbash, escape"
+date: 2022-05-10T00:00:00+00:00
+last_update: 2022-05-10T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Sdctf 2022</h1>

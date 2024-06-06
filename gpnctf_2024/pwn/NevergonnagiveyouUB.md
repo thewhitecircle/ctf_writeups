@@ -8,6 +8,8 @@ parent: gpnctf_2024
 category: pwn
 challenge: Never gonna give you UB
 tags: "pwn, ava, win function, pwntools"
+date: 2024-06-02T00:00:00+00:00
+last_update: 2024-06-02T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Gpnctf 2024</h1>

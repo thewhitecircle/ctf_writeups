@@ -8,6 +8,8 @@ parent: metasploit_2021
 category: 4_of_diamonds
 challenge: 4 of diamonds
 tags: "web, starry"
+date: 2021-12-08T00:00:00+00:00
+last_update: 2021-12-08T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Metasploit 2021</h1>

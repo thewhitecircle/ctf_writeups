@@ -8,6 +8,8 @@ parent: hacktivitycon_2021
 category: crypto
 challenge: Hexahedron
 tags: "crypto, taz, rsa, rsactftool"
+date: 2021-09-20T00:00:00+00:00
+last_update: 2021-09-20T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Hacktivitycon 2021</h1>

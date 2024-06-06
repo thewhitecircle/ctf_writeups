@@ -8,6 +8,8 @@ parent: cyber_apocalypse_2022
 category: forensics
 challenge: Free Services
 tags: "forensics, bobby, legend, starry, twh, xor, python"
+date: 2022-05-21T00:00:00+00:00
+last_update: 2022-05-21T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2022</h1>

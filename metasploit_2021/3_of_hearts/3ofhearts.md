@@ -8,6 +8,8 @@ parent: metasploit_2021
 category: 3_of_hearts
 challenge: 3 of hearts
 tags: "web, starry, http request smuggling"
+date: 2021-12-08T00:00:00+00:00
+last_update: 2021-12-08T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Metasploit 2021</h1>

@@ -8,6 +8,8 @@ parent: sdctf_2022
 category: crypto
 challenge: Vinegar
 tags: "crypto, ava, cipher"
+date: 2022-05-10T00:00:00+00:00
+last_update: 2022-05-10T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Sdctf 2022</h1>

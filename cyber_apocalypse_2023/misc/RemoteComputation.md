@@ -8,6 +8,8 @@ parent: cyber_apocalypse_2023
 category: misc
 challenge: Remote Computation
 tags: "misc, twh, python, scripting"
+date: 2023-03-27T00:00:00+00:00
+last_update: 2023-03-27T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2023</h1>

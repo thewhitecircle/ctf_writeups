@@ -8,6 +8,8 @@ parent: nahamcon_2024
 category: web
 challenge: My Shop Disaster
 tags: "web, starry, wordpress, woocommerce, rce"
+date: 2024-05-28T00:00:00+00:00
+last_update: 2024-05-28T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Nahamcon 2024</h1>

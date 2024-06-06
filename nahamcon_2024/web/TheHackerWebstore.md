@@ -8,6 +8,8 @@ parent: nahamcon_2024
 category: web
 challenge: The Hacker Webstore
 tags: "web, starry, sql, sqli, cracking"
+date: 2024-05-28T00:00:00+00:00
+last_update: 2024-05-28T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Nahamcon 2024</h1>

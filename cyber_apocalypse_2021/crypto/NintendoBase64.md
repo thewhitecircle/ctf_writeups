@@ -8,6 +8,8 @@ parent: cyber_apocalypse_2021
 category: crypto
 challenge: Nintendo Base64
 tags: "crypto, twh"
+date: 2021-04-24T00:00:00+00:00
+last_update: 2021-04-24T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2021</h1>

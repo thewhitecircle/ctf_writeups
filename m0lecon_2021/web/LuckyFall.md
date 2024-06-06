@@ -8,6 +8,8 @@ parent: m0lecon_2021
 category: web
 challenge: Lucky Fall
 tags: "web, twh"
+date: 2021-05-17T00:00:00+00:00
+last_update: 2021-05-17T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">M0Lecon 2021</h1>

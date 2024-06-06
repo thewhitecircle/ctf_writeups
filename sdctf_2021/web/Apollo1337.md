@@ -8,6 +8,8 @@ parent: sdctf_2021
 category: web
 challenge: Apollo 1337
 tags: "web, nigamelastic, twh, api"
+date: 2021-05-10T00:00:00+00:00
+last_update: 2021-05-10T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Sdctf 2021</h1>

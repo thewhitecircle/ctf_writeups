@@ -8,6 +8,8 @@ parent: nahamcon_2024
 category: forensics
 challenge: Breath of the wild
 tags: "forensics, twh, vhdx, bitlocker, autopsy, "
+date: 2024-05-28T00:00:00+00:00
+last_update: 2024-05-28T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Nahamcon 2024</h1>

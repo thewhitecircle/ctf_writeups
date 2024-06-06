@@ -8,6 +8,8 @@ parent: cyber_apocalypse_2024
 category: crypto
 challenge: Primary Knowledge
 tags: "crypto, legend, rsa, python"
+date: 2024-03-16T00:00:00+00:00
+last_update: 2024-03-16T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2024</h1>

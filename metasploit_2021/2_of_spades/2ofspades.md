@@ -8,6 +8,8 @@ parent: metasploit_2021
 category: 2_of_spades
 challenge: 2 of spades
 tags: "web, taz, nikto"
+date: 2021-12-08T00:00:00+00:00
+last_update: 2021-12-08T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Metasploit 2021</h1>
