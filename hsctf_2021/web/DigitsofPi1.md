@@ -9,7 +9,7 @@ category: web
 challenge: Digits of Pi 1
 tags: "web, starry"
 date: 2021-06-20T00:00:00+00:00
-last_update: 2021-06-20T00:00:00+00:00
+last_modified_at: 2021-06-20T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Hsctf 2021</h1>

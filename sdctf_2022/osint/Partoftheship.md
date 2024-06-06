@@ -9,7 +9,7 @@ category: osint
 challenge: Part of the ship
 tags: "osint, ava, starry"
 date: 2022-05-10T00:00:00+00:00
-last_update: 2022-05-10T00:00:00+00:00
+last_modified_at: 2022-05-10T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Sdctf 2022</h1>

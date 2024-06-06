@@ -9,7 +9,7 @@ category: 10_of_clubs
 challenge: 10 of clubs
 tags: "web, starry, cve, rce"
 date: 2021-12-08T00:00:00+00:00
-last_update: 2021-12-08T00:00:00+00:00
+last_modified_at: 2021-12-08T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Metasploit 2021</h1>

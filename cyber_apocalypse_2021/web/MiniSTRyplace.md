@@ -9,7 +9,7 @@ category: web
 challenge: MiniSTRyplace
 tags: "web, bobby, twh, lfi"
 date: 2021-04-24T00:00:00+00:00
-last_update: 2021-04-24T00:00:00+00:00
+last_modified_at: 2021-04-24T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2021</h1>

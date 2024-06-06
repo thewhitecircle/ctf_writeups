@@ -9,7 +9,7 @@ category: osint
 challenge: Speed-Studying 2
 tags: "osint, ava"
 date: 2021-05-10T00:00:00+00:00
-last_update: 2021-05-10T00:00:00+00:00
+last_modified_at: 2021-05-10T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Sdctf 2021</h1>

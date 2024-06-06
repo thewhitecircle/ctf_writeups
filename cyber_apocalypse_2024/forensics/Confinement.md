@@ -9,7 +9,7 @@ category: forensics
 challenge: Confinement
 tags: "forensics, starry, twh, ad1, ftk, ransomware, encryption, evtx, powershell, python, dotnet"
 date: 2024-03-16T00:00:00+00:00
-last_update: 2024-03-16T00:00:00+00:00
+last_modified_at: 2024-03-16T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2024</h1>

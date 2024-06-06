@@ -9,7 +9,7 @@ category: crypto
 challenge: never gonna let you crypto
 tags: "crypto, twh, xor, known plaintext attack, python"
 date: 2024-06-02T00:00:00+00:00
-last_update: 2024-06-02T00:00:00+00:00
+last_modified_at: 2024-06-02T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Gpnctf 2024</h1>

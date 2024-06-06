@@ -9,7 +9,7 @@ category: misc
 challenge: Input as a service
 tags: "misc, ava, python, jail, escape"
 date: 2021-04-24T00:00:00+00:00
-last_update: 2021-04-24T00:00:00+00:00
+last_modified_at: 2021-04-24T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2021</h1>

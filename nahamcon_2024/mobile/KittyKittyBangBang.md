@@ -9,7 +9,7 @@ category: mobile
 challenge: Kitty Kitty Bang Bang
 tags: "mobile, legend, android"
 date: 2024-05-28T00:00:00+00:00
-last_update: 2024-05-28T00:00:00+00:00
+last_modified_at: 2024-05-28T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Nahamcon 2024</h1>
