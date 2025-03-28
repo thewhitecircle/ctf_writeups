@@ -1,6 +1,6 @@
 ---
 layout: load_md
-title: The White Circle | Cyber Apocalypse 2025 | Kewiri: Writeup
+title: The White Circle | Cyber Apocalypse 2025 | Kewiri Writeup
 desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
 image: images/twc_og_banner.jpg
 ctf: Cyber Apocalypse 2025
@@ -13,7 +13,7 @@ last_update: 2025-03-29T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2025</h1>
-## Kewiri:
+## Kewiri
 > Not Solved by Starry-Lord
 
 This challenge was a bunch of questions around computing elliptic curve. There is already a very good writeup from the creator himself about what goes on in questions 1 to 6 but I’m writing this for question 6, because that’s where I had the most pain in the whole competition. https://github.com/hackthebox/cyber-apocalypse-2025/blob/main/crypto/Kewiri/README.md
