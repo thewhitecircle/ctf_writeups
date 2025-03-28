@@ -17,28 +17,28 @@ last_update: 2025-03-29T00:00:00+00:00
 > Solved by thewhiteh4t
 
 
-1. PID of original chrome process : `4080`
+- PID of original chrome process : `4080`
 
 ```    
     vol -f memdump.elf windows.cmdline.CmdLine
     4080 chrome.exe "C:\Program Files\Google\Chrome\Application\chrome.exe"
 ```
 
-2. What is the only Folder on the Desktop : `malext`
+- What is the only Folder on the Desktop : `malext`
 
 ```    
     vol -f memdump.elf windows.filescan.FileScan > file_list.txt
     0xa708c8d9ec30 \Users\selene\Desktop\malext\background.js
 ```
 
-3. What is the Extention's ID : `nnjofihdjilebhiiemfmdlpbdkbjcpae`
+- What is the Extention's ID : `nnjofihdjilebhiiemfmdlpbdkbjcpae`
 
 ```    
     cat file_list.txt | grep Chrome | grep Extension
     0xa708c8830c80 \Users\selene\AppData\Local\Google\Chrome\User Data\Default\Local Extension Settings\nnjofihdjilebhiiemfmdlpbdkbjcpae\LOG
 ```
 
-4. After examining the malicious extention's code, what is the log filename in which the datais stored : `000003.log`
+- After examining the malicious extention's code, what is the log filename in which the datais stored : `000003.log`
 
 ```    
     cat file_list.txt| grep Chrome | grep nnjofihdjilebhiiemfmdlpbdkbjcpae
@@ -51,7 +51,7 @@ last_update: 2025-03-29T00:00:00+00:00
     0xa708caba14d0 \Users\selene\AppData\Local\Google\Chrome\User Data\Default\Local Extension Settings\nnjofihdjilebhiiemfmdlpbdkbjcpae\000003.log
 ```
 
-5. What is the URL the user navigated to : `drive.google.com`
+- What is the URL the user navigated to : `drive.google.com`
 
 ```
     vol -f memdump.elf windows.dumpfiles.DumpFiles --virtaddr 0xa708caba14d0
@@ -60,7 +60,7 @@ last_update: 2025-03-29T00:00:00+00:00
     3log!"drive.google.comEnter\r\nselene"|:log("drive.google.comEnter\r\nselene|Shift|"Xu@<;log)"drive.google.comEnter\r\nselene|Shift|@"�g<log*"drive.google.co
 ```
 
-6. What is the password of selene@rangers.eldoria.com : `clip-mummify-proofs`
+- What is the password of selene@rangers.eldoria.com : `clip-mummify-proofs`
 
 in the same log file :
 

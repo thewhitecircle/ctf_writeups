@@ -22,12 +22,12 @@ last_update: 2025-03-29T00:00:00+00:00
 - We were given a PCAP in this challenge
 
 
-1. What is the IP address responsible for compromising the website?
-    1. based on POST requests in the PCAP : `194.59.6.66`
-2. What is the name of the endpoint exploited by the attacker?
-    1. based on POST requests : `/execute`
-3. What is the name of the obfuscation tool used by the attacker?
-    1. simply printing the script found above shows a code object which contains a string : `Py-Fuscate`
+- What is the IP address responsible for compromising the website?
+    - based on POST requests in the PCAP : `194.59.6.66`
+- What is the name of the endpoint exploited by the attacker?
+    - based on POST requests : `/execute`
+- What is the name of the obfuscation tool used by the attacker?
+    - simply printing the script found above shows a code object which contains a string : `Py-Fuscate`
 
 ```    
     # replaced exec() with print()
@@ -35,10 +35,10 @@ last_update: 2025-03-29T00:00:00+00:00
     <code object <module> at 0x555555605650, file "Py-Fuscate", line 1>
 ```
 
-4. What is the IP address and port used by the malware to establish a connection with the Command and Control (C2) server?
-    1. To find this first we need to get the plain text code, what we have is a `python code object`, we can create `pyc` file which is bytecode and get plaintext from it using tools like `uncompyle6`, `decompyle3` or `pycdc`
-    2. However none of the tools worked due to python version mismatch, so I found `pylingual`
-    3. in the code we can see the ip and port : `13.61.7.218:55155`
+- What is the IP address and port used by the malware to establish a connection with the Command and Control (C2) server?
+    - To find this first we need to get the plain text code, what we have is a `python code object`, we can create `pyc` file which is bytecode and get plaintext from it using tools like `uncompyle6`, `decompyle3` or `pycdc`
+    - However none of the tools worked due to python version mismatch, so I found `pylingual`
+    - in the code we can see the ip and port : `13.61.7.218:55155`
 
 ```
     # Decompiled with PyLingual (https://pylingual.io)
@@ -140,15 +140,15 @@ last_update: 2025-03-29T00:00:00+00:00
     time.sleep(50)
 ```
 
-5. What encryption key did the attacker use to secure the data?
-    1. in the code we can see where the key is sent : `client.send(f'{user}{SEPARATOR}{k}'.encode())`
-    2. we can look for this pattern in the PCAP : `ec2amaz-bktvi3e\administrator\n5UUfizsRsP7oOCAq` so the key is : `5UUfizsRsP7oOCAq`
+- What encryption key did the attacker use to secure the data?
+    - in the code we can see where the key is sent : `client.send(f'{user}{SEPARATOR}{k}'.encode())`
+    - we can look for this pattern in the PCAP : `ec2amaz-bktvi3e\administrator\n5UUfizsRsP7oOCAq` so the key is : `5UUfizsRsP7oOCAq`
 
 
-6. What is the MD5 hash of the file exfiltrated by the attacker?
-    1. since we have the key, we can write our own decryption script
-    2. first we need to extract data chunks from the PCAP using `tshark -2 -r capture.pcap -R "tcp.stream eq 4 and data.data" -T fields -e data.data > datafile.txt`
-    3. now we can write a script to parse data chunks and decrypt the stolen files
+- What is the MD5 hash of the file exfiltrated by the attacker?
+    - since we have the key, we can write our own decryption script
+    - first we need to extract data chunks from the PCAP using `tshark -2 -r capture.pcap -R "tcp.stream eq 4 and data.data" -T fields -e data.data > datafile.txt`
+    - now we can write a script to parse data chunks and decrypt the stolen files
 
 ```
     from Crypto.Cipher import AES

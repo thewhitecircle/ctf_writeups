@@ -63,9 +63,9 @@ Output:
 
 With this we now know the following details:
 
-1. It's an `OrderedDict`
-2. Only one parameter is present: `'hidden.weight'`
-3. Its shape is `torch.Size([40, 40])`, which suggests a single hidden layer
+- It's an `OrderedDict`
+- Only one parameter is present: `'hidden.weight'`
+- Its shape is `torch.Size([40, 40])`, which suggests a single hidden layer
 
 A bunch of testing allowed me to find out it was diagonal values, here is the final script:
 
