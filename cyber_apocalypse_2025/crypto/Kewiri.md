@@ -7,7 +7,9 @@ ctf: Cyber Apocalypse 2025
 parent: cyber_apocalypse_2025
 category: crypto
 challenge: Kewiri:
-tags: ""
+tags: "crypto, starry, sagemath, python"
+date: 2025-03-29T00:00:00+00:00
+last_update: 2025-03-29T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2025</h1>

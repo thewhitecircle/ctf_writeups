@@ -7,7 +7,9 @@ ctf: Cyber Apocalypse 2025
 parent: cyber_apocalypse_2025
 category: forensics
 challenge: Tales for the Brave
-tags: ""
+tags: "forensics, twh, javascript, obfuscation, api, win32pe, wireshark"
+date: 2025-03-29T00:00:00+00:00
+last_update: 2025-03-29T00:00:00+00:00
 ---
 
 <h1 class="heading card-title white-text">Cyber Apocalypse 2025</h1>
