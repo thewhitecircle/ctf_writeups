@@ -1,5 +1,6 @@
 # CTF WriteUps by TWC
 
+* [Cyber Apocalypse 2025](cyber_apocalypse_2025/README.md)
 * [Cyber Apocalypse 2024](cyber_apocalypse_2024/README.md)
 * [Cyber Apocalypse 2023](cyber_apocalypse_2023/README.md)
 * [Cyber Apocalypse 2022](cyber_apocalypse_2022/README.md)
