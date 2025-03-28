@@ -6,7 +6,7 @@ image: images/twc_og_banner.jpg
 ctf: Cyber Apocalypse 2025
 parent: cyber_apocalypse_2025
 category: crypto
-challenge: Kewiri:
+challenge: Kewiri
 tags: "crypto, starry, sagemath, python"
 date: 2025-03-29T00:00:00+00:00
 last_update: 2025-03-29T00:00:00+00:00
