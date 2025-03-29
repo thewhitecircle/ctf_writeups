@@ -21,43 +21,43 @@ last_update: 2025-03-29T00:00:00+00:00
 - I used ChatGPT for this one, obviously :)
 
 ```
-    from collections import deque
-    import ast
+from collections import deque
+import ast
+
+def shortest_safe_path(grid):
+    rows, cols = len(grid), len(grid[0])
+    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]  # Up, Down, Left, Right
+
+    # Find the start (0,0) and exit ('E') position
+    start = (0, 0)
     
-    def shortest_safe_path(grid):
-        rows, cols = len(grid), len(grid[0])
-        directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]  # Up, Down, Left, Right
+    # BFS Initialization
+    queue = deque([(start[0], start[1], 0)])  # (row, col, distance)
+    visited = set([start])
     
-        # Find the start (0,0) and exit ('E') position
-        start = (0, 0)
+    while queue:
+        r, c, dist = queue.popleft()
         
-        # BFS Initialization
-        queue = deque([(start[0], start[1], 0)])  # (row, col, distance)
-        visited = set([start])
+        # Check if we reached the exit
+        if grid\[r\][c] == 'E':
+            return dist
         
-        while queue:
-            r, c, dist = queue.popleft()
+        # Explore all possible moves
+        for dr, dc in directions:
+            nr, nc = r + dr, c + dc
             
-            # Check if we reached the exit
-            if grid\[r\][c] == 'E':
-                return dist
-            
-            # Explore all possible moves
-            for dr, dc in directions:
-                nr, nc = r + dr, c + dc
-                
-                # Check valid move
-                if 0 <= nr < rows and 0 <= nc < cols and (nr, nc) not in visited:
-                    if grid\[nr\][nc] == 0 or grid\[nr\][nc] == 'E':  # Safe to move
-                        queue.append((nr, nc, dist + 1))
-                        visited.add((nr, nc))
-        
-        return -1  # No valid path found
+            # Check valid move
+            if 0 <= nr < rows and 0 <= nc < cols and (nr, nc) not in visited:
+                if grid\[nr\][nc] == 0 or grid\[nr\][nc] == 'E':  # Safe to move
+                    queue.append((nr, nc, dist + 1))
+                    visited.add((nr, nc))
     
-    # Find shortest safe path
-    grid = ast.literal_eval(input())
-    result = shortest_safe_path(grid)
-    print(result)
+    return -1  # No valid path found
+
+# Find shortest safe path
+grid = ast.literal_eval(input())
+result = shortest_safe_path(grid)
+print(result)
 ```
 
 ![](https://i.imgur.com/TQgOAkV.png)

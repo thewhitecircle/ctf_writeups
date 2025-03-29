@@ -26,7 +26,6 @@ last_update: 2025-03-29T00:00:00+00:00
 https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 
 
-
     input1 = input().split(' ')
     num_ops = int(input1[1])
     other_inputs = []
@@ -41,7 +40,7 @@ https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
         for i in range(1, len(arr)):
             maxEnding = max(maxEnding + arr[i], arr[i])
             res = max(res, maxEnding)
-            
+
         return res
     for op in ops_list:
         if 'Q' in op:
@@ -54,7 +53,6 @@ https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
             effect_ind = int(op[1])
             new_val = int(op[2])
             input2[effect_ind - 1] = new_val
-    
 
 
 ![](https://i.imgur.com/BeI04WV.png)

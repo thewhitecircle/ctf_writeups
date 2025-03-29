@@ -23,7 +23,7 @@ last_update: 2025-03-29T00:00:00+00:00
 - Payload :
 
 ```
-    gossip; cat flag.txt
+gossip; cat flag.txt
 ```
 
 ![](https://i.imgur.com/TMZLUhN.png)

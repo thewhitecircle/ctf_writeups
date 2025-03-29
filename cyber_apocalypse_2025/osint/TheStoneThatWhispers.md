@@ -26,6 +26,6 @@ last_update: 2025-03-29T00:00:00+00:00
 - Coordinates: `53.5817331,-6.6101392`
 
 ```
-    HTB{Lia_Fail}
+HTB{Lia_Fail}
 ```
 

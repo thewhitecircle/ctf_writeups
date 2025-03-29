@@ -25,6 +25,6 @@ last_update: 2025-03-29T00:00:00+00:00
 - Located at : `Iberia 104, 2571409 Viña del Mar, Valparaíso, Chile`
 
 ```
-    HTB{Iberia_104_2571409_Viña_del_Mar_Valparaíso}
+HTB{Iberia_104_2571409_Viña_del_Mar_Valparaíso}
 ```
 

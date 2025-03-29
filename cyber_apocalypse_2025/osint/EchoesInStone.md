@@ -27,6 +27,6 @@ last_update: 2025-03-29T00:00:00+00:00
 - Coordinates: `53.7776973,-6.4178868`
 
 ```
-    HTB{Muriedach_High_Cross}
+HTB{Muriedach_High_Cross}
 ```
 

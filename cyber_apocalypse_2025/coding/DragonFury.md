@@ -22,29 +22,29 @@ last_update: 2025-03-29T00:00:00+00:00
 - Simulate the battle by computing the total damage dealt over successive rounds until victory is achieved
 
 ```
-    import json
-    import random
-    
-    input_text = json.loads(input())
-    T = int(input())
-    num_sublists = len(input_text)
-    
-    def magic():
-        rand_t = 0
-        choices = []
-        for sublist in input_text:
-            rand = random.choice(sublist)
-            choices.append(rand)
-            rand_t += rand
-        return rand_t, choices
-    
-    random_sum = 0
-    flag_choices = None
-    
-    while random_sum != T:
-        random_sum, flag_choices = magic()
-    
-    print(flag_choices)
+import json
+import random
+
+input_text = json.loads(input())
+T = int(input())
+num_sublists = len(input_text)
+
+def magic():
+    rand_t = 0
+    choices = []
+    for sublist in input_text:
+        rand = random.choice(sublist)
+        choices.append(rand)
+        rand_t += rand
+    return rand_t, choices
+
+random_sum = 0
+flag_choices = None
+
+while random_sum != T:
+    random_sum, flag_choices = magic()
+
+print(flag_choices)
 ```
 
 ![](https://i.imgur.com/2po9B6B.png)
