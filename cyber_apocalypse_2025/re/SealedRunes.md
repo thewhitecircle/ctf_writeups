@@ -20,7 +20,7 @@ last_update: 2025-03-29T00:00:00+00:00
 ![](https://i.imgur.com/wuPRcFZ.png)
 
 
-running the challenege, we are asked for input and if given wrong one, it rejects us (sad life). lets try opening up the binary in IDA and have a look at decompiled code.
+Running the challenge, we are asked for input and if given wrong one, it rejects us (sad life). Let's try opening up the binary in IDA and take a look at decompiled code.
 
 
     int __fastcall main(int argc, const char **argv, const char **envp)
@@ -38,7 +38,7 @@ running the challenege, we are asked for input and if given wrong one, it reject
       return 0;
     }
 
-this is the main function, which simply asks us for our inputs. de-compiling the function `check_input()` we get the following code
+This is the main function, which simply asks us for our inputs. Decompiling the function `check_input()` we get the following code
 
 
     void __fastcall check_input(const char *a1)
@@ -78,7 +78,7 @@ looks like we found the `flag`, lets us check the string
 ![](https://i.imgur.com/MKQJh1X.png)
 
 
-base64 decoding this string (`LmB9ZDNsNDN2M3JfYzFnNG1fM251cntCVEhgIHNpIGxsZXBzIHRlcmNlcyBlaFQ=` )gives us a string which looks like if reversed would gives us the flag, so cyberchef it is!
+Base64 decoding this string (`LmB9ZDNsNDN2M3JfYzFnNG1fM251cntCVEhgIHNpIGxsZXBzIHRlcmNlcyBlaFQ=`)gives us a string which looks like if reversed would give us the flag, so cyberchef it is!
 
 
 ![](https://i.imgur.com/d7MCFlA.png)

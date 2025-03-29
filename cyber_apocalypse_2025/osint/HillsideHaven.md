@@ -22,12 +22,12 @@ last_update: 2025-03-29T00:00:00+00:00
 ![](https://i.imgur.com/RM2BxJW.jpeg)
 
 - We need to locate the house shown in the image above.
-- Google reverse image gives us multiple hints that this house is located in the california region.
+- Google reverse image gives us multiple hints that this house is located in the California region.
 - Also, house number is visible in image: `356`
-- I searched through google reverse image results for hours but still couldn’t find this house so I took the help of ChatGPT
+- I searched through Google reverse image results for hours but still couldn’t find this house, so I took the help of ChatGPT
 
 
-- I asked ChatGPT to give me list of cities in california:
+- I asked ChatGPT to give me list of cities in California:
     - Los Angeles
     - San Francisco
     - San Diego
@@ -43,12 +43,12 @@ last_update: 2025-03-29T00:00:00+00:00
     - Napa Valley
 
 
-- I created a prompt to look though cities in **California**
+- I created a prompt to look through cities in **California**
     
-    I am going to give you name of a city in california and I want you to list every possible area which might have house structure like shown in the picture. The city name is: <California_City>
+    I am going to give you name of a city in California and I want you to list every possible area which might have house structure like shown in the picture. The city name is: <California_City>
 
 
-- Next, I started looking though each area street views to find neighbourhood where houses structure might match the one in given image
+- Next, I started looking through each area street views to find neighborhood where houses structure might match the one in given image
 
 
 - First, I started with **Los Angeles**
@@ -72,7 +72,7 @@ last_update: 2025-03-29T00:00:00+00:00
     - Lake View Terrace – A more rural part of L.A. with homes that have a similar driveway and layout.
 
 
-- I couldn’t find any clues in **Los Angeles** so the next stop is **San Francisco**
+- I couldn’t find any clues in **Los Angeles**, so the next stop is **San Francisco**
     - Bernal Heights – Many homes have front-facing garages and are on sloped streets.
     - Glen Park – A mix of older homes, often built into the hillside.
     - Noe Valley – Some older homes with front garages on steep streets.
@@ -112,7 +112,7 @@ last_update: 2025-03-29T00:00:00+00:00
 
 - While browsing through street views, I found the house in **Kensington** area:
     - Coordinates: `37.9004022,-122.2888087`
-    - Google maps link: https://www.google.com/maps/place/356+Coventry+Rd,+Kensington,+CA+94707,+USA/@37.898787,-122.2958131,15.18z/data=!4m6!3m5!1s0x80857947bba1b0a5:0xb12a3cc68ed056ac!8m2!3d37.900398!4d-122.2862338!16s%2Fg%2F11c250smlw?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D
+    - Google Maps link: https://www.google.com/maps/place/356+Coventry+Rd,+Kensington,+CA+94707,+USA/@37.898787,-122.2958131,15.18z/data=!4m6!3m5!1s0x80857947bba1b0a5:0xb12a3cc68ed056ac!8m2!3d37.900398!4d-122.2862338!16s%2Fg%2F11c250smlw?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D
 
 
 ```

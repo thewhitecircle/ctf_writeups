@@ -16,9 +16,9 @@ last_update: 2025-03-29T00:00:00+00:00
 ## Kewiri
 > Not Solved by Starry-Lord
 
-This challenge was a bunch of questions around computing elliptic curve. There is already a very good writeup from the creator himself about what goes on in questions 1 to 6 but I’m writing this for question 6, because that’s where I had the most pain in the whole competition. https://github.com/hackthebox/cyber-apocalypse-2025/blob/main/crypto/Kewiri/README.md
+This challenge was a bunch of questions around computing elliptic curve. There is already a very good write-up from the creator himself about what goes on in questions 1 to 6, but I’m writing this for question 6, because that’s where I had the most pain in the whole competition. https://github.com/hackthebox/cyber-apocalypse-2025/blob/main/crypto/Kewiri/README.md
 
-For debugging purposes I used a listener script but you don’t need it at all. I just needed to make sure my script was sending an answer in time or if the server was replying with “Too slow …”:
+For debugging purposes I used a listener script, but you don’t need it at all. I just needed to make sure my script was sending an answer in time or if the server was replying with “Too slow …”:
 
 Listener Script:
 
@@ -73,9 +73,9 @@ Listener Script:
     start_proxy()
     
 
-Make sure you have the latest version of sagemath by using the docker image, which makes things easier than potentially wasting a couple hours with installing an old version of sagemath from Debian packages, then removing it, then building sagemath from source. Link to build from source if you absolutely need to: https://sagemanifolds.obspm.fr/install_ubuntu.html 
+Make sure you have the latest version of sagemath by using the docker image, which makes things easier than potentially wasting a couple of hours with installing an old version of sagemath from Debian packages, then removing it, then building sagemath from source. Link to build from source if you absolutely need to: https://sagemanifolds.obspm.fr/install_ubuntu.html 
 
-After trying everything, between making a subprocess from my python to a sage script taking arguments inside the sage docker, which was “Too slow” for the server, running the sage script for question 6 inside the sage docker, and buidling sage from source on another Ubuntu vm, the best way I found in the end was the following:
+After trying everything, between making a subprocess from my python to a sage script taking arguments inside the sage docker, which was “Too slow” for the server, running the sage script for question 6 inside the sage docker, and building sage from source on another Ubuntu VM, the best way I found in the end was the following:
 
 
     docker run -it -v $PWD:/mnt --name sage_bs sagemath/sagemath "sage -pip install ecdsa pwntools; sage -python /mnt/python.py"

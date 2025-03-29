@@ -23,7 +23,7 @@ last_update: 2025-03-29T00:00:00+00:00
 The clue from the title was to look into weights for the downloadable file:
 `eldorian_artifact.pth`
 
-The pth extension indicates we are working with a serialized PyTorch model so we could query it’s Keys:
+The `pth` extension indicates we are working with a serialized PyTorch model, so we could query its Keys:
 
 check_keys.py :
 
@@ -63,7 +63,7 @@ Output:
 
 With this we now know the following details:
 
-- It's an `OrderedDict`
+- It's a `OrderedDict`
 - Only one parameter is present: `'hidden.weight'`
 - Its shape is `torch.Size([40, 40])`, which suggests a single hidden layer
 

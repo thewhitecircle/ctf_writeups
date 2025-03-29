@@ -23,11 +23,11 @@ last_update: 2025-03-29T00:00:00+00:00
         ...
     }
 
-First I thought we needed to Bruteforce the secret, but then I realised the value was getting stored on-chain, and as we all know, on-chain storage is public [**😉**](https://emojipedia.org/winking-face), so we could just extract it from the creation of the contract’s transaction.
+First I thought we needed to Bruteforce the secret, but then I realized the value was getting stored on-chain, and as we all know, on-chain storage is public [**😉**](https://emojipedia.org/winking-face), so we could just extract it from the creation of the contract’s transaction.
 
 Since it’s the first declared variable, it is stored at slot 0 on the EldorianGateKernel contract address.
 
-With that we managed to authenticate, but we still needed to become the “Usurper” which is basically not receiving any role, but the contract assigne the ROLE_SERF by default:
+With that we managed to authenticate, but we still needed to become the “Usurper” which is basically not receiving any role, but the contract assigned the ROLE_SERF by default:
 
 
     function evaluateIdentity(address _unknown, uint8 _contribution) external onlyFrontend returns (uint id, uint8 roles) {

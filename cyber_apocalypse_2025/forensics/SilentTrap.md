@@ -20,7 +20,7 @@ last_update: 2025-03-29T00:00:00+00:00
 ![](https://i.imgur.com/niU7beE.png)
 
 
-For this challenge we had a packet capture to read with wireshark.
+For this challenge we had a packet capture to read with Wireshark.
 
 Question 1:
 First mail opened and replied to:
@@ -42,7 +42,7 @@ Answer:
     2025-02-24_15:46
 
 Question 3:
-This started to become interesting now. The zip was not cracking with any dictionary I had but I eventually found this packet with the content of the email, with password for the zip:
+This started to become interesting now. The zip was not cracking with any dictionary I had, but I eventually found this packet with the content of the email, with password for the zip:
 
 ![](https://i.imgur.com/F2Gaenv.png)
 
@@ -63,18 +63,18 @@ Credentials used to log in the attacker mailbox were the following:
     proplayer@email.com:completed
 
 Question 5:
-The task scheduled by the attacker could be found by decrypting the encrpyted base64 looking strings in IMAP protocol packets, so it was time to look into the executable received:
+The task scheduled by the attacker could be found by decrypting the encrypted base64 looking strings in IMAP protocol packets, so it was time to look into the executable received:
 
 
     file Eldoria_Balance_Issue_Report.pdf.exe                                                                                                                                                                                              
     Eldoria_Balance_Issue_Report.pdf.exe: PE32 executable (GUI) Intel 80386 Mono/.Net assembly, for MS Windows, 3 sections
 
-I disabled defender because it was eating the file sent from wsl to Windows, and used ILSpy which allowed me to find out the xor key used for obfuscating the messages sent through IMAP/IMF packets. Following the streams in Wireshark allowed to see a few of them:
+I disabled defender because it was eating the file sent from WSL to Windows, and used ILSpy which allowed me to find out the XOR key used for obfuscating the messages sent through IMAP/IMF packets. Following the streams in Wireshark allowed to see a few of them:
 
 ![](https://i.imgur.com/LmkRRmr.png)
 
 
-About the executable, `<PrivateImplementationDetails>` which was only visible with IL in ILspy was showing 2 possible candidates for a 256 bytes xor key as follows:
+About the executable, `<PrivateImplementationDetails>` which was only visible with IL in ILSpy was showing 2 possible candidates for 256 bytes XOR key as follows:
 
 
     .class private auto ansi '<Module>'
@@ -160,7 +160,7 @@ About the executable, `<PrivateImplementationDetails>` which was only visible wi
     } // end of class <PrivateImplementationDetails><5ceda002-b6a9-4e52-b13e-d38ba653d933_netmodule>
     
 
-in the method `imap_chanel.Exor::Encrypt()` we could see a fe things happening: 
+in the method `imap_chanel.Exor::Encrypt()` we could see a few things happening: 
 
 - Builds a key-scheduling array (`S`)
 - Does the standard RC4 PRGA to encrypt/decrypt the data
@@ -206,9 +206,9 @@ in the method `imap_chanel.Exor::Encrypt()` we could see a fe things happening:
     }
 
 The code was looking very similar to RC4 https://en.wikipedia.org/wiki/RC4
-We could see the blocs were very identical to the Key-scheduling algorithm (KSA) and the Pseudo Random Generation algorithm (PRGA) from wikipedia.
+We could see the blocs were very identical to the Key-scheduling algorithm (KSA) and the Pseudo Random Generation algorithm (PRGA) from Wikipedia.
 
-decrypt_rc4.py:
+Decrypt_rc4.py:
 
 
     #!/usr/bin/env python3

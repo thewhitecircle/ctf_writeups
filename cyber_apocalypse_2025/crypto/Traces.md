@@ -17,7 +17,7 @@ last_update: 2025-03-29T00:00:00+00:00
 ## Traces
 > Solved by Starry-Lord
 
-We were given a server.py which allowed us to connect to an irc chat with encrpyted messages.
+We were given a server.py which allowed us to connect to an IRC chat with encrypted messages.
 
 One notable thing in that server.py was:
 
@@ -37,10 +37,10 @@ One notable thing in that server.py was:
             return self.encrypt(ct)
 
 What we could see from this was the key was only generated once during 
-`__init__(self, host, port)`, and the `AES.MODE_CTR` encryption was having the same counter everytime it occured because `Counter.new()` starts from 0 if not otherwise specified.
-Basically the keystream was the same reused for each encrpytion, which meant we could try and derive it from known plaintext. The server itself allowed to connect manually, and after joining a channel, one would have to write `!nick username` in order to start chatting. This was a good start for decrypting the rest of the messages because we could easily guess that was the content of the first messages in the chat.
+`__init__(self, host, port)`, and the `AES.MODE_CTR` encryption was having the same counter every time it occurred because `Counter.new()` starts from 0 if not otherwise specified.
+Basically the key stream was the same reused for each encryption, which meant we could try and derive it from known plaintext. The server itself allowed connecting manually, and after joining a channel, one would have to write `!nick username` in order to start chatting. This was a good start for decrypting the rest of the messages because we could easily guess that was the content of the first messages in the chat.
 
-decrpytor.py:
+Decrpytor.py:
 
 
     from binascii import unhexlify, hexlify

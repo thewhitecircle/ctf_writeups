@@ -16,7 +16,7 @@ last_update: 2025-03-29T00:00:00+00:00
 ## ImpossiMaze
 > Solved by avantika
 
-Running the binary gives us weird screen, on our terminal with gibberish everywhere, so i was quite confused.
+Running the binary gives us weird screen, on our terminal with gibberish everywhere, so I was quite confused.
 
 Decompiling `main()` gave me this
 
@@ -130,8 +130,8 @@ Decompiling `main()` gave me this
       return 0LL;
     }
 
-looking at this, looks like it is using `ncurses` lib to print stuff on screen and this variable
-`v9 = getmaxy(stdscr);` is max y axis value of the terminal size and `v14 = getmaxx(stdscr);` is the max x axis value of terminal size.
+Looking at this, looks like it is using `ncurses` lib to print stuff on screen and this variable
+`v9 = getmaxy(stdscr);` is max y-axis value of the terminal size and `v14 = getmaxx(stdscr);` is the max x-axis value of terminal size.
 
 
     if ( v9 == 13 && v14 == 37 )
@@ -150,8 +150,8 @@ looking at this, looks like it is using `ncurses` lib to print stuff on screen a
           wattr_off(stdscr, 0x80000uLL, 0LL);
         }
 
-now, this part of the code, is the Y is 13 and X is 37, it will print whatever is stored in `byte_4120` on the screen, lets do that now.
-we will re-size the terminal to match our size of 13 by 37
+Now, this part of the code, is the Y is 13 and X is 37, it will print whatever is stored in `byte_4120` on the screen, let's do that now.
+We will re-size the terminal to match our size of 13 by 37
 
 
 ![](https://i.imgur.com/7Y3Cbtb.png)

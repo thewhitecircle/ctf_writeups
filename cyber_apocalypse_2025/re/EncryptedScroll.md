@@ -21,7 +21,7 @@ last_update: 2025-03-29T00:00:00+00:00
 ![](https://i.imgur.com/KqQ9Bw1.png)
 
 
-running the chanllege, we are asked for a input, giving the wrong input, we see it rejects us (sad life)
+running the challenge, we are asked for an input, giving the wrong input, we see it rejects us (sad life)
 let us decompile the challenge using IDA
 
 
@@ -59,7 +59,7 @@ this is the main function, which seems to get our input and then decrypt it usin
       return v4 - __readfsqword(0x28u);
     }
 
-we have a string, which goes under certain operation and then is compared with our input, i have written a python script to reverse that operation and get us the flag!
+We have a string, which goes under certain operation and then is compared with our input, I have written a python script to reverse that operation and get us the flag!
 
 
     enc = list('IUC|t2nqm4`gm5h`5s2uin4u2d~')
@@ -69,7 +69,7 @@ we have a string, which goes under certain operation and then is compared with o
         flag.append(chr(ord(_) - 1))
     print("".join(flag))
 
-running this script, we get the flag
+Running this script, we get the flag
 `HTB{s1mpl3_fl4g_4r1thm3t1c}` is our flag.
 
 

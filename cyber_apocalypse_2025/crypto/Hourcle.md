@@ -78,13 +78,13 @@ last_update: 2025-03-29T00:00:00+00:00
 
 - First issues that ChatGPT helped me noticed is that `encrypt_creds` function uses `cipher.decrypt()` instead of `cipher.encrypt()`, which means the encryption logic is incorrect.
 - The `password` is a random 20-character alphanumeric string.
-- `encrypt_creds(user)` takes a username, appends the password, pads the result to 16-byte blocks, and encrypts it using **AES-CBC** with a **random IV**.
+- `encrypt_creds(user)` Takes a username, appends the password, pads the result to 16-byte blocks, and encrypts it using **AES-CBC** with a **random IV**.
 
 
 - Exploit logic:
     - Since the **AES block size is 16 bytes**, any username of **16 bytes or longer** ensures that the password starts in a new block.
     - Send a 47-character username (`'A' * 47`), ensuring the password starts in a new block.
-    - This will make sure that the first character of the password is at the end of the third block and now we can proceed with the brute force attack.
+    - This will make sure that the first character of the password is at the end of the third block, and now we can proceed with the brute force attack.
 
 
 - Here is the script I’ve written with the help of ChatGPT to brute force password:

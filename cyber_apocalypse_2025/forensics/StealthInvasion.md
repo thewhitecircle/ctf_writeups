@@ -31,14 +31,14 @@ last_update: 2025-03-29T00:00:00+00:00
     0xa708c8d9ec30 \Users\selene\Desktop\malext\background.js
 ```
 
-- What is the Extention's ID : `nnjofihdjilebhiiemfmdlpbdkbjcpae`
+- What is the Extension's ID : `nnjofihdjilebhiiemfmdlpbdkbjcpae`
 
 ```    
     cat file_list.txt | grep Chrome | grep Extension
     0xa708c8830c80 \Users\selene\AppData\Local\Google\Chrome\User Data\Default\Local Extension Settings\nnjofihdjilebhiiemfmdlpbdkbjcpae\LOG
 ```
 
-- After examining the malicious extention's code, what is the log filename in which the datais stored : `000003.log`
+- After examining the malicious extension's code, what is the log filename in which the data is stored : `000003.log`
 
 ```    
     cat file_list.txt| grep Chrome | grep nnjofihdjilebhiiemfmdlpbdkbjcpae

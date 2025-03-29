@@ -20,7 +20,7 @@ last_update: 2025-03-29T00:00:00+00:00
 
 
 - This one looked difficult but was actually simple once I started solving
-- Largest sum contiguous sub-array is a common programming problem
+- The Largest sum contiguous sub-array is a common programming problem
 
 
 https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/

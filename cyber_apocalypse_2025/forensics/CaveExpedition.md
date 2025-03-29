@@ -35,7 +35,7 @@ last_update: 2025-03-29T00:00:00+00:00
     > evtx_dump Microsoft-Windows-Sysmon_Operational.evtx -o jsonl -f sysmon.json
 ```
 
-- Now we can write a parser and extract powershell code from the logs :
+- Now we can write a parser and extract PowerShell code from the logs :
 
 ```
     import json
@@ -60,7 +60,7 @@ last_update: 2025-03-29T00:00:00+00:00
 
 ![](https://i.imgur.com/JU56fAW.png)
 
-- As we can see `Append -NoNewline` is used so we will concatenate all the base64 strings
+- As we can see `Append -NoNewline` is used, so we will concatenate all the base64 strings
 
 ```
     > cat b64_ps.txt
@@ -68,7 +68,7 @@ last_update: 2025-03-29T00:00:00+00:00
     ...
 ```
 
-- After decoding in cyberchef we get the actual powershell script
+- After decoding in cyberchef we get the actual PowerShell script
 
 ```
     > cat attack.ps1
@@ -177,7 +177,7 @@ last_update: 2025-03-29T00:00:00+00:00
     }
 ```
 
-- The code is obfuscated a bit so we can clear it up and get more meaningful script, for this step I used chatGPT 
+- The code is obfuscated a bit, so we can clear it up and get more meaningful script, for this step I used ChatGPT 
 
 ```
     > cat attack_formatted.ps1

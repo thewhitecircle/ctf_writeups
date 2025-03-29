@@ -21,7 +21,7 @@ last_update: 2025-03-29T00:00:00+00:00
 ![](https://i.imgur.com/VxfRD0j.png)
 
 
-This Beast was killed with adding an attacker.sol contract to bypass the “eternal resilience” function, which kept healing the boss after each attack. So we needed to make a triple attack:
+This Beast was killed with adding a `attacker.sol` contract to bypass the “eternal resilience” function, which kept healing the boss after each attack. So we needed to make a triple attack:
 
 
     cat contracts/attack.sol                                                                                        
@@ -40,7 +40,7 @@ This Beast was killed with adding an attacker.sol contract to bypass the “eter
         }
     }
 
-here is the attack script with ethers.js v5 (because i never managed to make this challenge return valid JSON with v6:
+here is the attack script with ethers.js v5 (because I never managed to make this challenge return valid JSON with v6):
 
 
     const fs = require("fs");

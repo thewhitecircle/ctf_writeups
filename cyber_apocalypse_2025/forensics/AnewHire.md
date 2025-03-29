@@ -86,7 +86,7 @@ last_update: 2025-03-29T00:00:00+00:00
     PS: Make sure you replace the '[PORT]' with your instance's port. Additionally, make sure that any hostnames that are found point to your instance's IP address!
     
 
-visit the url, press the button to see nothing happens, and find the script:
+Visit the URL, press the button to see nothing happens, and find the script:
 
 
 ![](https://i.imgur.com/Eo7EL5m.png)
