@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | Nahamcon 2022 | Gossip Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for Gossip for Nahamcon 2022 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: Nahamcon 2022
 parent: nahamcon_2022
@@ -12,9 +12,7 @@ date: 2022-05-03T00:00:00+00:00
 last_modified_at: 2022-05-03T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">Nahamcon 2022</h1>
 
-## Gossip
 > Solved By : Starry-Lord, Taz, Legend, thewhiteh4t
 
 This one involved an ssh connection to a Linux machine. We could find kubernetes secrets in the usual /run/secrets/kubernetes.io/serviceaccount which revealed it was a kubernetes container.

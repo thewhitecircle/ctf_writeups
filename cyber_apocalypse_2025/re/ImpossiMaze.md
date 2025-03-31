@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | Cyber Apocalypse 2025 | ImpossiMaze Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for ImpossiMaze for Cyber Apocalypse 2025 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: Cyber Apocalypse 2025
 parent: cyber_apocalypse_2025
@@ -12,8 +12,6 @@ date: 2025-03-29T00:00:00+00:00
 last_update: 2025-03-29T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">Cyber Apocalypse 2025</h1>
-## ImpossiMaze
 > Solved by avantika
 
 Running the binary gives us weird screen, on our terminal with gibberish everywhere, so I was quite confused.

@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | M0Lecon 2021 | Lucky Fall Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for Lucky Fall for M0Lecon 2021 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: M0Lecon 2021
 parent: m0lecon_2021
@@ -12,9 +12,7 @@ date: 2021-05-17T00:00:00+00:00
 last_modified_at: 2021-05-17T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">M0Lecon 2021</h1>
 
-## Lucky Fall
 > Solved By : thewhiteh4t
 
 - we have a simple login page

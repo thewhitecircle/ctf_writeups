@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | Sdctf 2021 | hIDe and seek 2 Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for hIDe and seek 2 for Sdctf 2021 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: Sdctf 2021
 parent: sdctf_2021
@@ -12,9 +12,7 @@ date: 2021-05-10T00:00:00+00:00
 last_modified_at: 2021-05-10T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">Sdctf 2021</h1>
 
-## hIDe and seek 2
 > Solved By : Ava and nigamelastic
 
 * I've gotten some more good intel. Apparently, the following information is the location of another flag!

@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | Cyber Apocalypse 2021 | PhaseStream 1 Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for PhaseStream 1 for Cyber Apocalypse 2021 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: Cyber Apocalypse 2021
 parent: cyber_apocalypse_2021
@@ -12,9 +12,7 @@ date: 2021-04-24T00:00:00+00:00
 last_modified_at: 2021-04-24T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">Cyber Apocalypse 2021</h1>
 
-## PhaseStream 1
 
 > Solved by: Legend
 

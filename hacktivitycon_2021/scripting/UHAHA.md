@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | Hacktivitycon 2021 | UHAHA Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for UHAHA for Hacktivitycon 2021 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: Hacktivitycon 2021
 parent: hacktivitycon_2021
@@ -12,9 +12,7 @@ date: 2021-09-20T00:00:00+00:00
 last_modified_at: 2021-09-20T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">Hacktivitycon 2021</h1>
 
-## UHAHA
 > Solved By : ava and thewhiteh4t
 
 We are given a file called uhaha, upon checking the file using the `file` command, we come to know that it is type of archive called UHARC, fairly rare one that is. Obvious conclusion seems like extracting it but oh, look it is password protected, and the description of challenge did mention we might need to use rockyou, so it looks like it is time for bruteforcing. Looks like we are going to need a terminal tool and write a script for bruteforcing, apparently we couldn’t find a linux tool to extract UHARC archive, running it under wine was a possibility but that would just complicate the whole thing, so we got a windows tool for it linked here - https://sam.gleske.net/uharc/

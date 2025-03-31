@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | Uiuctf 2021 | Chaplin's PR Nightmare - 5 Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for Chaplin's PR Nightmare - 5 for Uiuctf 2021 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: Uiuctf 2021
 parent: uiuctf_2021
@@ -12,9 +12,7 @@ date: 2021-08-12T00:00:00+00:00
 last_modified_at: 2021-08-12T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">Uiuctf 2021</h1>
 
-## Chaplin's PR Nightmare - 5
 > Solved by : choco
 
 “Charlie also has an imgur account that may hold the secret to his PR nightmare... Can you find it?

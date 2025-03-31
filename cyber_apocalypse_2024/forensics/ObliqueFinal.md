@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | Cyber Apocalypse 2024 | Oblique Final Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for Oblique Final for Cyber Apocalypse 2024 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: Cyber Apocalypse 2024
 parent: cyber_apocalypse_2024
@@ -12,9 +12,7 @@ date: 2024-03-16T00:00:00+00:00
 last_modified_at: 2024-03-16T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">Cyber Apocalypse 2024</h1>
 
-## Oblique Final
 > Attempted by :  Starry-Lord, thewhiteh4t
 
 This challenge occupied a good 3 days of our time and taught us a new attack vector so it gets its own writeup even if it got solved too late. Everything starts with a large 4GB `hiberfil.sys` file. This is a hibernation file that got extracted form a laptop after it got out of battery. We managed to extract the active memory from that which gave us 6GB of memory to look through. We used volatility 2 and 3 to achieve a better understanding of the machine, until we could find interesting files in the user’s home folder, and dig them for more.

@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | Gpnctf 2024 | Never gonna tell a lie and type you Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for Never gonna tell a lie and type you for Gpnctf 2024 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: Gpnctf 2024
 parent: gpnctf_2024
@@ -12,9 +12,7 @@ date: 2024-06-02T00:00:00+00:00
 last_modified_at: 2024-06-02T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">Gpnctf 2024</h1>
 
-## Never gonna tell a lie and type you
 > Solved by : thewhiteh4t
 
 
