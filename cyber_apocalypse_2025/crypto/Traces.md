@@ -9,7 +9,7 @@ category: crypto
 challenge: Traces
 tags: "crypto, starry, aes, python, reuse"
 date: 2025-03-29T00:00:00+00:00
-last_update: 2025-03-29T00:00:00+00:00
+last_modified_at: 2025-03-29T00:00:00+00:00
 ---
 
 

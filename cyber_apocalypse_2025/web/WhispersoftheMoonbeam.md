@@ -9,7 +9,7 @@ category: web
 challenge: Whispers of the Moonbeam
 tags: "web, twh, command, injection"
 date: 2025-03-29T00:00:00+00:00
-last_update: 2025-03-29T00:00:00+00:00
+last_modified_at: 2025-03-29T00:00:00+00:00
 ---
 
 
