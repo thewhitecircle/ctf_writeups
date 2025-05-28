@@ -1,7 +1,9 @@
 ---
 layout: default
 title: The White Circle | CTF Writeups
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can
+discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in
+your journey with amazing people from all over the world."
 image: images/twc_og_banner.jpg
 last_modified_at: 2025-04-02
 ---
@@ -9,7 +11,8 @@ last_modified_at: 2025-04-02
 <h2 class="card-title white-text">WRITEUPS</h2>
 
 <div class="ctf-cat-bar">
-    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="location.href='{{ site.url }}'">◀</div>
+    <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text"
+        onclick="location.href='{{ site.url }}'">◀</div>
     <div data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" id="sbtn">search</div>
 </div>
 
@@ -36,7 +39,8 @@ last_modified_at: 2025-04-02
 
 <div class="wu-container">
     {% for entry in site.data.ctf_writeups %}
-    <div data-augmented-ui=" tl-clip br-clip both" class="aui-theme wu-btn m10" onclick="location.href='{{ site.url }}{{ page.url }}{{ entry[0] | replace: ' ', '_' | downcase }}';">
+    <div data-augmented-ui=" tl-clip br-clip both" class="aui-theme wu-btn m10"
+        onclick="location.href='{{ site.url }}{{ page.url }}{{ entry[0] | replace: ' ', '_' | downcase }}/';">
         <span class="cyan-text">{{ entry[0] }}</span>
     </div>
     {% endfor %}
@@ -53,20 +57,20 @@ last_modified_at: 2025-04-02
     var outbox = document.getElementById("search-resp")
     var sbInput = document.getElementById('search-input');
 
-    btn.onclick = function() {
+    btn.onclick = function () {
         wrapper.style.display = "block";
         wrapper.style.backdropFilter = "blur(5px)";
         modal.style.display = "flex";
         sbInput.focus();
     }
 
-    span.onclick = function() {
+    span.onclick = function () {
         wrapper.style.display = "none";
         wrapper.style.backdropFilter = "";
         modal.style.display = "none";
     }
 
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target == modal) {
             wrapper.style.display = "none";
             wrapper.style.backdropFilter = "";
@@ -82,13 +86,13 @@ last_modified_at: 2025-04-02
         ]
     };
 
-    function searchWriteup(){
+    function searchWriteup() {
         outbox.innerHTML = '';
         query = document.getElementById("search-input").value;
-        $.getJSON("{{ site.url }}/ctf_search.json", function(data) {
+        $.getJSON("{{ site.url }}/ctf_search.json", function (data) {
             const fuse = new Fuse(data, fuseOptions);
             const results = fuse.search(query);
-            for (var i=0; i < results.length; i++){
+            for (var i = 0; i < results.length; i++) {
                 var title = results[i]['title'];
                 var url = results[i]['url'];
                 var tags = results[i]['tags'];
@@ -99,7 +103,7 @@ last_modified_at: 2025-04-02
                 tag_list = tags.split(', ')
                 li_div = document.createElement('div');
                 li_div.classList.add('tag-row');
-                for (var j=0; j < tag_list.length; j++){
+                for (var j = 0; j < tag_list.length; j++) {
                     li_div.innerHTML += `<button class="tag-btn" onclick="searchTag('${tag_list[j]}')">${tag_list[j]}</button>`
                 }
                 out_li.appendChild(li_div);
@@ -108,12 +112,12 @@ last_modified_at: 2025-04-02
         });
     }
 
-    function searchTag(tagname){
+    function searchTag(tagname) {
         outbox.innerHTML = '';
-        $.getJSON("{{ site.url }}/ctf_search.json", function(data) {
+        $.getJSON("{{ site.url }}/ctf_search.json", function (data) {
             const fuse = new Fuse(data, fuseOptions);
             const results = fuse.search(tagname);
-            for (var i=0; i < results.length; i++){
+            for (var i = 0; i < results.length; i++) {
                 var title = results[i]['title'];
                 var url = results[i]['url'];
                 var tags = results[i]['tags'];
@@ -124,7 +128,7 @@ last_modified_at: 2025-04-02
                 tag_list = tags.split(', ')
                 li_div = document.createElement('div');
                 li_div.classList.add('tag-row');
-                for (var j=0; j < tag_list.length; j++){
+                for (var j = 0; j < tag_list.length; j++) {
                     li_div.innerHTML += `<button class="tag-btn" onclick="searchTag('${tag_list[j]}')">${tag_list[j]}</button>`
                 }
                 out_li.appendChild(li_div);
@@ -133,11 +137,11 @@ last_modified_at: 2025-04-02
         });
     }
 
-    $('input[type=text]').keypress(function(e) {
-    if (e.which == 13) {
-        e.preventDefault();
-        searchWriteup();
-    }
-});
+    $('input[type=text]').keypress(function (e) {
+        if (e.which == 13) {
+            e.preventDefault();
+            searchWriteup();
+        }
+    });
 
 </script>
