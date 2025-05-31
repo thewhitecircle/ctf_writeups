@@ -26,6 +26,10 @@ last_modified_at: 2025-05-31T00:00:00+00:00
     <a href="#flag-6" data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="">Flag 6</a>
 </div>
 
+
+You can find the author's French translation on <a href="https://synthweb.ch/fr/blog/the-mission-nahamcon-ctf-2025" target="_blank">Synthweb the Swiss web agency | Your IT specialist in Geneva</a>
+
+
 ![](https://i.imgur.com/3vCjEqA.png)
 
 
