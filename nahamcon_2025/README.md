@@ -11,6 +11,6 @@ We have added all the challenges we were able to solve, this is not a complete l
 * [Malware](malware.md)
 * [Misc](misc.md)
 * [OSINT](osint.md)
-* [The Mission](The_Mission_Group.md)
+* [The Mission](TheMission.md)
 * [Warmups](warmups.md)
 * [Web](web.md)
