@@ -17,6 +17,15 @@ last_modified_at: 2025-05-31T00:00:00+00:00
 ## The Mission
 > Solved by Starry-lord
 
+<div class="ctf-cat-bar">
+    <a href="#flag-1" data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="">Flag 1</a>
+    <a href="#flag-2" data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="">Flag 2</a>
+    <a href="#flag-3" data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="">Flag 3</a>
+    <a href="#flag-4" data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="">Flag 4</a>
+    <a href="#flag-5" data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="">Flag 5</a>
+    <a href="#flag-6" data-augmented-ui="tl-clip br-clip both" class="aui-theme-btn ctf-cat-btn white-text" onclick="">Flag 6</a>
+</div>
+
 ![](https://i.imgur.com/3vCjEqA.png)
 
 
@@ -24,7 +33,7 @@ This challenge was in 6 parts, made by Adam Langley from [HackingHub](https://ha
 🩸 
 Because I expect a few non-technical readers, I will try to be as demonstrative as possible.
 
-**Flag 1**
+### Flag 1
 
 Usually, we discover a webpage where a few functionalities are present, and the goal here is to try them all and try to deduct how they are implemented, in order to potentially access stuff we shouldn’t be able to or break them. We also get a set of credentials, and a wordlist we can use in order to avoid massive amounts of requests from using public directory fuzzing wordlists with our fuzzing tools. Here is the website:
 
@@ -44,7 +53,7 @@ Before logging in, I like to check if the website has something to hide from web
 ![](https://i.imgur.com/SR4KWqv.png)
 
 
-**Flag 2**
+### Flag 2
 
 So here, the website wants to hide the `/internal-dash` page from crawling bots, which is a good reason to make me curious about it. It’s an admin portal which expects a classic username and password combo in a POST request, which we don’t have.
 
@@ -98,7 +107,7 @@ Bypassing the WAF was not our most difficult task, as a simple URL encode tricke
 ![](https://i.imgur.com/hnNKSz9.png)
 
 
-**Flag 3**
+### Flag 3
 
 We can see a reference to `/api/v1/actuator/heapdump` directly in the actuator. The content of this file is a memory dump of a POST request made from the user `inti`, with a JSON Web token Bearer header, which allowed to query a `/api/v1/internal-dashboard/token` endpoint.
 
@@ -157,7 +166,7 @@ With this we were able to bypass logging in the internal-dash without posting or
 ![](https://i.imgur.com/0866XKt.png)
 
 
-**Flag 4**
+### Flag 4
 
 So now we can look up reports by report ID. We had found our one report ID in our Dashboard upon using the provided credentials, but trying it revealed we don’t have permission.
 
@@ -191,7 +200,7 @@ But the second query wasn’t asking for anything, which allowed us to retrieve 
 ![](https://i.imgur.com/bLTmDuR.png)
 
 
-**Flag 5**
+### Flag 5
 
 Now we had a few things we could put together in order to make this work, but still missing permission to use the lookup feature in the internal dashboard from Flag 3. Playing around with the POST request with our `BurpSuite` repeater, we could eventually get telling messages about what was going on behind the scene:
 
@@ -404,11 +413,10 @@ Then back to our user Dashboard, we finally found flag 5 along with a hefty boun
 
 ![](https://i.imgur.com/jKQeqnS.png)
 
-
-
 > Mission Accomplished!
 
-**Bonus : Flag 6**
+
+### Flag 6
 
 There was an AI chatbot in the bottom right of the dashboard, which we could have a conversation with.
 
