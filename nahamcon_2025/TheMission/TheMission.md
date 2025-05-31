@@ -5,7 +5,7 @@ desc: "The White Circle is a community for Cyber/Information Security students, 
 image: images/twc_og_banner.jpg
 ctf: Nahamcon 2025
 parent: nahamcon_2025
-category: The_Mission_Group
+category: TheMission
 challenge: The Mission
 tags: "web, starry, api, fuzzing, graphql, waf bypass, misconfig, ssrf"
 date: 2025-05-31T00:00:00+00:00
@@ -151,8 +151,8 @@ Reproducing this request for myself, we managed to get a token from the API!
 
 This was definitely the way forward, the only thing left was to figure out how to use this token. It was definitely pointing towards a way to bypass the /internal-dash login page we found in the beginning, but how exactly was the most difficult part of this challenge for me. This token could have been 2 different things: 
 
-1. A JSON web token secret to allow us to make JWT for other users and pass it as a header (but nothing I did worked)
-2. A cookie value for authentication in the /internal-dash.
+- A JSON web token secret to allow us to make JWT for other users and pass it as a header (but nothing I did worked)
+- A cookie value for authentication in the /internal-dash.
 
 That’s when [thewhiteh4t](https://thewhiteh4t.github.io) got the brilliant idea to query the `/internal-dash/logout` page, which reveals the name of the cookie:
 
