@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | Nahamcon 2025 | My Third CTF Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for My Third CTF for Nahamcon 2025 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: Nahamcon 2025
 parent: nahamcon_2025
@@ -12,9 +12,7 @@ date: 2025-05-31T00:00:00+00:00
 last_modified_at: 2025-05-31T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">Nahamcon 2025</h1>
 
-## My Third CTF
 > Solved by thewhiteh4t
 
 Similar to second variant of this challenge, we again had to perform directory enumeration but this time it was nested. That means nested directories. I used the same wordlist I created in second variant, so I will skip that part, if you are looking for that please read the writeup for second variant.

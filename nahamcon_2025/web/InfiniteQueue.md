@@ -1,7 +1,7 @@
 ---
 layout: load_md
 title: The White Circle | Nahamcon 2025 | Infinite Queue Writeup
-desc: "The White Circle is a community for Cyber/Information Security students, enthusiasts and professionals. You can discuss anything related to Security, share your knowledge with others, get help when you need it and proceed further in your journey with amazing people from all over the world."
+desc: Check out our writeup for Infinite Queue for Nahamcon 2025 capture the flag competition.
 image: images/twc_og_banner.jpg
 ctf: Nahamcon 2025
 parent: nahamcon_2025
@@ -12,9 +12,7 @@ date: 2025-05-31T00:00:00+00:00
 last_modified_at: 2025-05-31T00:00:00+00:00
 ---
 
-<h1 class="heading card-title white-text">Nahamcon 2025</h1>
 
-## Infinite Queue
 > Solved by Legend
 
 In this challenge there is a website in which we need to buy a ticket, but we are added to a long queue.
